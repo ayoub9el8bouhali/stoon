@@ -1,0 +1,16 @@
+<svg width="240" height="72" viewBox="0 0 240 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ST00N">
+  <rect width="240" height="72" rx="20" fill="#121212"/>
+  <circle cx="35" cy="36" r="18" fill="#FFD600"/>
+  <circle cx="54" cy="25" r="14" fill="#00E5FF" opacity="0.92"/>
+  <circle cx="52" cy="48" r="12" fill="#D500F9" opacity="0.9"/>
+  <path d="M31 36C31 27.716 37.716 21 46 21H54C62.284 21 69 27.716 69 36C69 44.284 62.284 51 54 51H46C37.716 51 31 44.284 31 36Z" fill="#121212" opacity="0.88"/>
+  <text x="86" y="45" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="0">ST00N</text>
+  <rect x="84" y="52" width="91" height="4" rx="2" fill="url(#brandGradient)"/>
+  <defs>
+    <linearGradient id="brandGradient" x1="84" y1="54" x2="175" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="0.5" stop-color="#D500F9"/>
+      <stop offset="1" stop-color="#FFD600"/>
+    </linearGradient>
+  </defs>
+</svg>
