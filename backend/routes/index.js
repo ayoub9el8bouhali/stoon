@@ -9,6 +9,9 @@ import jobRoutes from "./jobRoutes.js";
 import messageRoutes from "./messageRoutes.js";
 import reviewRoutes from "./reviewRoutes.js";
 import adminRoutes from "./adminRoutes.js";
+import cityRoutes from "./cityRoutes.js";
+import schoolRoutes from "./schoolRoutes.js";
+import programRoutes from "./programRoutes.js";
 
 const router = Router();
 
@@ -31,5 +34,8 @@ router.use("/jobs", jobRoutes);
 router.use("/messages", messageRoutes);
 router.use("/reviews", reviewRoutes);
 router.use("/admin", adminRoutes);
+router.use("/cities", cityRoutes);
+router.use("/schools", schoolRoutes);
+router.use("/programs", programRoutes);
 
 export default router;

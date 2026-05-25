@@ -8,7 +8,8 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "db:sync": "node database/sync.js",
-    "db:seed": "node database/seed.js"
+    "db:seed": "node database/seed.js",
+    "db:academic": "node database/academicSetup.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
