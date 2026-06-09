@@ -1,0 +1,677 @@
+STOON - LISTE DES ETABLISSEMENTS SUPERIEURS PAR REGION ET VILLE
+Version de travail pour seed data / Codex
+
+PERIMETRE UTILISE
+- Enseignement superieur public universitaire et grandes ecoles publiques.
+- Enseignement superieur prive autorise/reconnu par le Ministere.
+- CPGE/EST/ISPITS inclus car utiles pour STOON.
+- OFPPT/ISTA, BTS de lycees et centres de formation professionnelle non listes ici sauf demande separee, car ce n'est pas toujours de l'enseignement superieur universitaire.
+- Les villes repetees dans la demande ont ete normalisees dans leur region administrative correcte.
+
+SOURCES PRINCIPALES
+- Data.gov.ma : Etablissements de l'enseignement superieur universitaire public ouverts 2024-2025, 165 etablissements.
+- AMCI : Repertoire indicatif des etablissements publics marocains d'enseignement superieur 2024-2025.
+- MESRSI : Liste des etablissements d'enseignement superieur prive autorises 2024-2025.
+- MESRSI : Situation des universites et etablissements d'enseignement superieur prive reconnus par l'Etat.
+
+============================================================
+CASABLANCA-SETTAT
+============================================================
+
+CASABLANCA
+[PUBLIC]
+- Universite Hassan II de Casablanca
+- Faculte de Medecine et de Pharmacie de Casablanca
+- Faculte de Medecine Dentaire de Casablanca
+- Faculte des Sciences - Casablanca
+- Faculte des Sciences Ain Chock
+- Faculte des Sciences Ben M'Sik
+- Faculte des Sciences Juridiques, Economiques et Sociales - Casablanca
+- Faculte des Lettres et des Sciences Humaines - Casablanca
+- Faculte des Lettres et des Sciences Humaines Ben M'Sik
+- Ecole Nationale de Commerce et de Gestion - ENCG Casablanca
+- Ecole Nationale Superieure d'Electricite et de Mecanique - ENSEM Casablanca
+- Ecole Superieure de Technologie - EST Casablanca
+- CPGE publiques - Casablanca
+- ISPITS - Casablanca
+
+[PRIVE AUTORISE / RECONNU]
+- Universite Mohammed VI des Sciences de la Sante - UM6SS Casablanca
+- Universite Internationale de Casablanca - UIC
+- Universite Privee Mundiapolis - Casablanca
+- Institut Superieur du Genie Applique - IGA Casablanca
+- Atlantic Business School Privee - ABS Casablanca
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Casablanca
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Casablanca
+- Institut des Hautes Etudes de Management - HEM Casablanca
+- ESCA Ecole de Management
+- Institut Superieur de Formation en Technologie Agroalimentaire et Genie Applique - ISFORT
+- Institut des Hautes Etudes Bancaires, Financieres et Manageriales - HBFG Casablanca
+- Ecole des Hautes Etudes de Biotechnologie et de Sante Privee - EHEB
+- Ecole Superieure de Communication et de Publicite - Com'Sup Casablanca
+- Institut Superieur Maghrebin d'Optique et d'Optometrie - ISMOO
+- Ecole Superieure de Kinesitherapie et du Paramedical - ESKP
+- Haute Ecole de Kinesitherapie - HEK
+- Ecole Superieure en Ingenierie, Management et Genie Civil - ESTEM
+- Institut Polytechnique Prive de Casablanca
+- Institut Superieur du Journalisme et de Communication - ISJC
+- Institut Superieur des Sciences de Technologie - SIST Casablanca
+- Institut Superieur du Journalisme et de l'Information - IFJSUP Casablanca
+- Ecole Superieure de Psychologie - ESP
+- Ecole Superieure des Multimedia, Informatique et Reseaux - SUPEMIR
+- Institut Superieur d'Optique Theorique et Appliquee Prive - ISOTA
+- Ecole Superieure de Design Art Com-Sup Casablanca
+- Ecole Superieure d'Architecture de Casablanca - EAC
+- Ecole Superieure des Hautes Etudes en Technologie de l'Information et de la Communication Privee - Sup Technology
+- Institut Superieur du Transport et de la Logistique - ISTL Casablanca
+- Institut Specialise Prive des Sciences de la Sante - ISPS
+- Ecole Superieure de Management et de Communication - ESMC
+- Ecole Superieure de Design et des Arts Visuels - ESDAV
+- Ecole d'Ingenierie en Genie des Systemes Industriels de Casablanca - EIGSICA
+- Ecoles des Hautes Etudes des Sciences et Techniques de l'Ingenierie et du Management Privee - HESTIM
+- Ecole Superieure Privee de l'Innovation Informatique et Technologique - INNOV INFO
+- Ecole Superieure de Management et de Gestion des Ressources Humaines - SUP'RH
+- Ecole Superieure de Journalisme et de Communication - ESJC
+- Ecole Superieure d'Ingenierie de la Sante et de Management de Projets - ESISMP
+- Ecole Superieure d'Ingenierie Informatique et Multimedia - ES2IM
+- RT AEROSUP Casablanca
+- Ecole Superieure des Sciences Economiques et de Management - ESSEM
+- Ecole Superieure des Sciences de la Sante - ESSS
+- Ecole Centrale de Casablanca - ECC
+- ADALIA Private Institute of Management
+- Institut des Hautes Etudes en Paramedicales et Sociales - IHEPS Casablanca
+- TBS Casablanca Business School
+- Institut Superieur d'Ingenierie et des Affaires - ISGA Casablanca
+- EDGE Private Business School
+- HEM Engineering School Casablanca
+- Ecole Superieure des Affaires de Casablanca - ESAC
+- Institut Superieur des Etudes Paramedicales de Casablanca - ISEP Casablanca
+- Institut Superieur Prive des Etudes Paramedicales - ISPEP
+- Ecole Privee Superieure d'Ingenierie Numerique et Systemes d'Intelligence Artificielle - EPSINSIA
+- EDUMED Ecole Superieure Privee du Paramedical et de la Reeducation
+- Atlantic Engineering School Privee - AES Casablanca
+
+MOHAMMEDIA
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Mohammedia
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Mohammedia
+- Faculte des Lettres et des Sciences Humaines - Mohammedia
+- Ecole Normale Superieure de l'Enseignement Technique - ENSET Mohammedia
+- CPGE publiques - Mohammedia
+
+[PRIVE AUTORISE]
+- Ecole Superieure des Etudes Juridiques et Economiques - ESEJE Mohammedia
+- Ecole Superieure en Genie Biomedical et Techniques de Sante Privee - SUPTECH SANTE Mohammedia
+
+NOUACEUR / BOUSKOURA
+[PUBLIC]
+- Aucun etablissement public universitaire confirme dans les sources principales pour la ville de Nouaceur elle-meme.
+
+[PRIVE AUTORISE / RECONNU]
+- Universite Privee Mundiapolis - Casablanca / Nouaceur
+- Universite Internationale de Casablanca - UIC, zone Casablanca / Bouskoura
+- Ecole Centrale de Casablanca - ECC, Bouskoura / Ville Verte
+- International Institute of Management Casablanca Prive - IIMC Bouskoura
+- International Institute of Engineering Casablanca Prive - IIEC Bouskoura
+
+SETTAT
+[PUBLIC]
+- Universite Hassan I de Settat
+- Faculte des Sciences et Techniques - FST Settat
+- Faculte des Sciences Juridiques et Politiques - FSJP Settat
+- Faculte d'Economie et de Gestion - FEG Settat
+- Faculte des Langues, Arts et Sciences Humaines - FLASH Settat
+- Ecole Nationale de Commerce et de Gestion - ENCG Settat
+- CPGE publiques - Settat
+- ISPITS - Settat
+
+[PRIVE AUTORISE]
+- Ecole Superieure des Reseaux Informatiques et de Management - ESRIM Settat
+
+EL JADIDA
+[PUBLIC]
+- Universite Chouaib Doukkali
+- Faculte des Sciences - El Jadida
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES El Jadida
+- Faculte des Lettres et des Sciences Humaines - El Jadida
+- Ecole Nationale de Commerce et de Gestion - ENCG El Jadida
+- CPGE publiques - El Jadida
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales pour El Jadida ville.
+
+BERRECHID
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Berrechid
+
+[PRIVE AUTORISE]
+- Ecole Superieure Business de Berrechid Privee
+
+KHOURIBGA
+[PUBLIC]
+- Faculte Polydisciplinaire de Khouribga
+- CPGE publiques - Khouribga
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales pour Khouribga.
+
+SIDI BENNOUR
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Sidi Bennour
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales pour Sidi Bennour.
+
+============================================================
+RABAT-SALE-KENITRA
+============================================================
+
+RABAT
+[PUBLIC]
+- Universite Mohammed V de Rabat
+- Faculte de Medecine et de Pharmacie de Rabat
+- Faculte de Medecine Dentaire de Rabat
+- Faculte des Sciences de Rabat
+- Faculte des Sciences Juridiques, Economiques et Sociales - Rabat
+- Faculte des Lettres et des Sciences Humaines - Rabat
+- Ecole Mohammadia d'Ingenieurs - EMI
+- Ecole Nationale Superieure d'Informatique et d'Analyse des Systemes - ENSIAS
+- Institut National de Statistique et d'Economie Appliquee - INSEA
+- Ecole Nationale Superieure d'Arts et Metiers - ENSAM Rabat
+- Ecole Normale Superieure - ENS Rabat
+- Ecole Nationale d'Architecture - ENA Rabat
+- Institut Agronomique et Veterinaire Hassan II - IAV Hassan II
+- Institut National d'Amenagement et d'Urbanisme - INAU
+- Institut Superieur de l'Information et de la Communication - ISIC
+- Institut Superieur d'Arts Dramatiques et d'Animation Culturelle - ISADAC
+- Ecole Nationale de Sante Publique - ENSP
+- Dar Al Hadith Al Hassania
+- CPGE publiques - Rabat
+
+[PRIVE AUTORISE / RECONNU]
+- Universite Internationale de Rabat - UIR
+- Universite Internationale Abulcasis des Sciences de Sante - UIASS Rabat
+- High Technology School in Morocco - HIGH-TECH Rabat
+- International Institute for Higher Education in Morocco - IIHEM Rabat
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Rabat
+- Ecole des Hautes Etudes de Commerce - HEC Rabat
+- Institut des Hautes Etudes de Management - HEM Rabat
+- Institut Superieur d'Ingenierie et des Affaires Prive Rabat - ISGA Rabat
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Rabat
+- Institute for Leadership and Communication Studies - ILCS Rabat
+- Ecole Marocaine de Banque et de Commerce International - EMBCI Rabat
+- Ecole Superieure d'Optique Appliquee et du Paramedicale Prive - ESO Rabat
+- Ecole Superieure d'Architecture d'Interieur - ESAI Rabat
+- Institut Superieur Vinci d'Ingenierie Informatique et de Reseaux de Telecommunications - ISVIRT Rabat
+- Private International Institute of Management and Technologie - PIIMT Rabat / Temara
+- Ecole Superieure de Design Art Com Sup Rabat
+- Ecole Superieure de Management, Informatique et Telecommunications - SUPMTI Rabat
+- Institut Superieur des Hautes Etudes en Developpement Durable - ISHEDD Rabat
+- Ecole Marocaine d'Ingenierie - EMG Rabat
+- Superior Institutions of Sciences and Technology - SIST Rabat
+- Ecole Superieure de Rabat en Management et Ingenierie - ESRMI Rabat
+- Ecole Superieure des Sciences et Technologies de l'Ingenierie - ESSTI Rabat
+- Institut Superieur de Management, d'Administration et de Genie Informatique - ISMAGI Rabat
+- JUNIA Maroc Ecole d'Ingenierie Privee Rabat
+- ESLSCA Business School Rabat
+
+SALE
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Sale
+- Ecole Superieure de Technologie - EST Sale
+- Institut Royal de la Formation des Cadres - IRFC Sale
+- CPGE publiques - Sale
+
+[PRIVE AUTORISE]
+- Ecole des Sciences Economiques et Commerciales - ESSEC Sale / Bouknadel
+- Ecole Superieure des Sciences et de l'Ingenierie Bouregreg Privee - ESSIB Sale
+- Ecole Arts et Metiers Campus de Rabat - EAMR, Sale El Jadida
+
+KENITRA
+[PUBLIC]
+- Universite Ibn Tofail
+- Faculte des Sciences - Kenitra
+- Faculte des Sciences Juridiques et Politiques - FSJP Kenitra
+- Faculte d'Economie et de Gestion - FEG Kenitra
+- Faculte des Langues, des Lettres et des Arts - FLAL Kenitra
+- Faculte des Sciences Humaines et Sociales - FSHS Kenitra
+- Ecole Nationale de Commerce et de Gestion - ENCG Kenitra
+- Ecole Nationale des Sciences Appliquees - ENSA Kenitra
+- Ecole Superieure de Technologie - EST Kenitra
+- CPGE publiques - Kenitra
+- ISPITS - Kenitra
+
+[PRIVE AUTORISE]
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Kenitra
+- Ecole des Hautes Etudes de l'Ingenierie Commerciale et Management - EHESICOM Kenitra
+- Institut Superieur de Comptabilite, d'Administration et de Commerce - ICACSUP Kenitra
+- Hautes Etudes de Commerce, de Gestion et d'Informatique - HECGI Kenitra
+
+KHEMISSET
+[PUBLIC]
+- Aucun etablissement public universitaire confirme dans les sources principales utilisees.
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+FES-MEKNES
+============================================================
+
+FES
+[PUBLIC]
+- Universite Sidi Mohamed Ben Abdellah - USMBA Fes
+- Faculte de Medecine et de Pharmacie de Fes
+- Faculte des Sciences - Fes
+- Faculte des Sciences et Techniques - FST Fes
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Fes
+- Faculte des Lettres et des Sciences Humaines - Fes
+- Faculte de la Chariaa - Fes
+- Ecole Nationale de Commerce et de Gestion - ENCG Fes
+- Ecole Superieure de Technologie - EST Fes
+- Ecole Nationale d'Architecture - ENA Fes
+- CPGE publiques - Fes
+- ISPITS - Fes
+
+[PRIVE AUTORISE / RECONNU]
+- Universite Euro-Mediterraneenne de Fes - UEMF
+- Universite Privee de Fes - UPF
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Fes
+- Ecole Superieure de Management, du Commerce et d'Informatique - SUP'MANAGEMENT Fes
+- Ecole Superieure d'Optique et de Lunetterie - ESOL Fes
+- Ecole Superieure d'Ingenierie en Sciences Appliquees - ESISA Fes
+- Ecole des Hautes Etudes Comptables et Financieres - HECF Fes
+- Ecole Superieure de Telecommunication et de Management - SUPTEMA Fes
+- Institut Superieur d'Ingenierie et des Affaires - ISGA Fes
+- Ecole Superieure d'Ingenierie Automobile et Aeronautique - ESI2A Fes
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Fes Privee
+
+MEKNES
+[PUBLIC]
+- Universite Moulay Ismail - Meknes
+- Faculte des Sciences - Meknes
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Meknes
+- Faculte des Lettres et des Sciences Humaines - Meknes
+- Ecole Nationale de Commerce et de Gestion - ENCG Meknes
+- Ecole Nationale Superieure d'Arts et Metiers - ENSAM Meknes
+- Ecole Nationale d'Agriculture - ENA Meknes
+- Ecole Superieure de Technologie - EST Meknes
+- CPGE publiques - Meknes
+- ISPITS - Meknes
+
+[PRIVE AUTORISE]
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Meknes
+- Ecole des Hautes Etudes Comptables et Financieres - HECF Meknes
+- Ecole Marocaine Superieure d'Informatique et Gestion - EMSIG Meknes
+- Ecole Superieure de Genie Civil et des Nouvelles Technologies - ESGCNT Meknes
+- Ecole Superieure de Management, Informatique et Telecommunication - SUPMTI Meknes
+
+TAZA
+[PUBLIC]
+- Faculte Polydisciplinaire de Taza
+- CPGE publiques - Taza
+- ISPITS - Taza
+
+[PRIVE AUTORISE]
+- Ecole Superieure de Management et d'Ingenierie de l'Orient - Orient Sup de Management Taza
+
+IFRANE
+[PUBLIC / SPECIFIQUE]
+- Universite Al Akhawayn - AUI Ifrane
+
+[PRIVE]
+- Aucun autre etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+TAOUNATE
+[PUBLIC]
+- Faculte Polydisciplinaire de Taounate / Taounat - Universite Sidi Mohamed Ben Abdellah
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+MARRAKECH-SAFI
+============================================================
+
+MARRAKECH
+[PUBLIC]
+- Universite Cadi Ayyad - Marrakech
+- Faculte de Medecine et de Pharmacie de Marrakech
+- Faculte des Sciences Semlalia - Marrakech
+- Faculte des Sciences et Techniques - FST Marrakech
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Marrakech
+- Faculte des Lettres et des Sciences Humaines - Marrakech
+- Faculte Allogha Al Arabia - Marrakech
+- Ecole Nationale de Commerce et de Gestion - ENCG Marrakech
+- Ecole Nationale des Sciences Appliquees - ENSA Marrakech
+- Ecole Nationale d'Architecture - ENA Marrakech
+- Institut des Mines - Marrakech
+- CPGE publiques - Marrakech
+- ISPITS - Marrakech
+
+[PRIVE AUTORISE / RECONNU]
+- Universite Privee Marrakech Tensift El Haouz - UPM
+- Sup de Co - Ecole Superieure de Commerce - Marrakech
+- Ecole Superieure de Management et de Technologie Informatique Appliques Privee - ESMA Marrakech
+- Ecole des Hautes Etudes Economiques, Commerciales et d'Ingenierie - HEEC Marrakech
+- Institut des Hautes Etudes de Management - HEM Marrakech
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Marrakech
+- Institut Superieur d'Ingenierie et des Affaires - ISGA Marrakech
+- Institut des Hautes Etudes en Paramedical du Sud - IHEPS Marrakech
+- Ecole Superieure des Arts Visuels Privee - ESAV Marrakech
+- Grande Ecole de Commerce de Marrakech - GECM
+- Institut Superieur du Journalisme et de l'Information - IFJSUP Marrakech
+
+SAFI
+[PUBLIC]
+- Faculte Polydisciplinaire de Safi
+- Ecole Nationale des Sciences Appliquees - ENSA Safi
+- Ecole Superieure de Technologie - EST Safi
+- CPGE publiques - Safi
+- ISPITS - Safi
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+ESSAOUIRA
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Essaouira
+- ISPITS - Essaouira
+
+[PRIVE AUTORISE]
+- Ecole Superieure en Genie Biomedical et Techniques de Sante Essaouira Privee - SUPTECH SANTE Essaouira
+
+KELAA DES SRAGHNA / KALAA SERAGHNA
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Kalaa Seraghna
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+TANGER-TETOUAN-AL HOCEIMA
+============================================================
+
+TANGER
+[PUBLIC]
+- Universite Abdelmalek Essaadi - Tanger / Tetouan
+- Faculte de Medecine et de Pharmacie de Tanger
+- Faculte des Sciences et Techniques - FST Tanger
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Tanger
+- Ecole Nationale de Commerce et de Gestion - ENCG Tanger
+- Ecole Nationale des Sciences Appliquees - ENSA Tanger
+- Ecole Superieure Roi Fahd de Traduction - ESRFT Tanger
+- Institut National de l'Action Sociale - INAS Tanger
+- Institut Superieur International du Tourisme - ISIT Tanger
+- CPGE publiques - Tanger
+- ISPITS - Tanger
+
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Sciences Techniques et de Management - SUPTEM Tanger
+- Ecole Superieure de Commerce et de Gestion des Affaires Privee - ESCGA Tanger
+- Ecole Superieure Privee des Hautes Etudes Manageriales de Tanger - HEMT Tanger
+- Ecole des Metiers, de Commerce, de Gestion et d'Informatique Privee - EMCGI Tanger
+- Ecole Superieure du Management des Entreprises du Detroit - MEDSUP Management Tanger
+- Ecole des Nouvelles Sciences et Ingenierie - ENSIT Tanger
+- Institut Superieur de Management et des Medias - SUP'MM Tanger
+- Superior Institutions of Sciences and Technology - SIST Tanger
+- Ecole Superieure des Sciences Commerciales et de Gestion - ESSCG Tanger
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Tanger
+
+TETOUAN
+[PUBLIC]
+- Universite Abdelmalek Essaadi - Siege / Tetouan
+- Faculte des Sciences - Tetouan
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Tetouan
+- Faculte des Lettres et des Sciences Humaines - Tetouan / Martil
+- Faculte Ossoul Eddine - Tetouan
+- Ecole Nationale des Sciences Appliquees - ENSA Tetouan
+- Ecole Nationale d'Architecture - ENA Tetouan
+- CPGE publiques - Tetouan
+- ISPITS - Tetouan
+
+[PRIVE AUTORISE]
+- Institut Superieur Prive de Genie Informatique - SUP ISI Tetouan
+
+MARTIL
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Martil
+- Ecole Normale Superieure - ENS Martil
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+AL HOCEIMA
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Al Hoceima
+- Ecole Nationale des Sciences Appliquees - ENSA Al Hoceima
+- ISPITS - Al Hoceima
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+LARACHE
+[PUBLIC]
+- Faculte Polydisciplinaire de Larache - FPL
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+KSAR EL KEBIR
+[PUBLIC]
+- Faculte Polydisciplinaire Ksar El Kebir
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+SOUSS-MASSA
+============================================================
+
+AGADIR
+[PUBLIC]
+- Universite Ibn Zohr - Agadir
+- Faculte de Medecine et de Pharmacie d'Agadir
+- Faculte des Sciences - Agadir
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Agadir
+- Faculte des Lettres et des Sciences Humaines - Agadir
+- Faculte de la Chariaa - Agadir
+- Ecole Nationale de Commerce et de Gestion - ENCG Agadir
+- Ecole Nationale des Sciences Appliquees - ENSA Agadir
+- Ecole Nationale d'Architecture - ENA Agadir
+- Ecole Superieure de Technologie - EST Agadir
+- Complexe Horticole - Agadir
+- CPGE publiques - Agadir
+- ISPITS - Agadir
+
+[PRIVE AUTORISE / RECONNU]
+- Universite Internationale d'Agadir - Universiapolis
+- Ecole de Management et d'Administration des Affaires - Agadir
+- Ecole Superieure de Management du Sud Privee - ESMS Agadir
+- Institut des Hautes Etudes Paramedicales Souss - IHEPS Agadir
+
+AIT MELLOUL
+[PUBLIC]
+- Faculte des Langues, des Arts et des Lettres - Ait Melloul
+- Faculte des Sciences Appliquees - Ait Melloul
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+TAROUDANT
+[PUBLIC]
+- Faculte Polydisciplinaire de Taroudant
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+ORIENTAL
+============================================================
+
+OUJDA
+[PUBLIC]
+- Universite Mohammed Premier - Oujda
+- Faculte de Medecine et de Pharmacie d'Oujda
+- Faculte des Sciences - Oujda
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Oujda
+- Faculte des Lettres et des Sciences Humaines - Oujda
+- Ecole Nationale de Commerce et de Gestion - ENCG Oujda
+- Ecole Nationale des Sciences Appliquees - ENSA Oujda
+- Ecole Nationale d'Architecture - ENA Oujda
+- Ecole Superieure de Technologie - EST Oujda
+- CPGE publiques - Oujda
+- ISPITS - Oujda
+
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes Bancaires, Financieres et Manageriales - HBFG Oujda
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Oujda
+- Ecole Superieure de Management Informatique et Telecommunications Privee d'Oujda - SUPMTI Oujda
+- Ecole des Hautes Etudes d'Ingenierie - EHEIO Oujda
+- Ecole Superieure d'Ingenierie Appliquee et Innovation Privee - Oujda
+
+NADOR
+[PUBLIC]
+- Faculte Pluridisciplinaire de Nador
+- Ecole Superieure de Technologie - EST Nador
+- CPGE publiques - Nador
+- ISPITS - Nador
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+BERKANE
+[PUBLIC]
+- Ecole Nationale de l'Intelligence Artificielle et du Digital - ENIAD Berkane
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme par le MESRSI dans la liste principale. Des instituts paramedicaux prives locaux existent, mais ils doivent etre verifies separement avant integration officielle.
+
+============================================================
+BENI MELLAL-KHENIFRA
+============================================================
+
+BENI MELLAL
+[PUBLIC]
+- Universite Sultan Moulay Slimane - Beni Mellal
+- Faculte de Medecine et de Pharmacie de Beni Mellal
+- Faculte des Sciences et Techniques - FST Beni Mellal
+- Faculte des Lettres et des Sciences Humaines - Beni Mellal
+- Faculte d'Economie et de Gestion - FEG Beni Mellal
+- Ecole Nationale de Commerce et de Gestion - ENCG Beni Mellal
+- Ecole Superieure de Technologie - EST Beni Mellal
+- CPGE publiques - Beni Mellal
+- ISPITS - Beni Mellal
+
+[PRIVE AUTORISE]
+- Ecole Superieure de Management, Informatique et Telecommunication Privee de Beni Mellal - SUPMTI Beni Mellal
+
+KHENIFRA
+[PUBLIC]
+- Faculte Polydisciplinaire de Khenifra
+- Ecole Superieure de Technologie - EST Khenifra
+- ISPITS - Khenifra
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+DRAA-TAFILALET
+============================================================
+
+ERRACHIDIA
+[PUBLIC]
+- Faculte Polydisciplinaire d'Errachidia
+- Faculte des Sciences et Techniques - FST Errachidia
+- Ecole Superieure de Technologie - EST Errachidia
+- Faculte de Medecine et de Pharmacie - Errachidia
+- CPGE publiques - Errachidia
+- ISPITS - Errachidia
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+OUARZAZATE
+[PUBLIC]
+- Faculte Polydisciplinaire de Ouarzazate
+- CPGE publiques - Ouarzazate
+- ISPITS - Ouarzazate
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+GUELMIM-OUED NOUN
+============================================================
+
+GUELMIM
+[PUBLIC]
+- Faculte d'Economie et de Gestion - FEG Guelmim
+- Ecole Superieure de Technologie - EST Guelmim
+- Faculte de Medecine et de Pharmacie - Guelmim
+- CPGE publiques - Guelmim
+- ISPITS - Guelmim
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+LAAYOUNE-SAKIA EL HAMRA
+============================================================
+
+LAAYOUNE
+[PUBLIC]
+- Faculte Polydisciplinaire de Laayoune
+- Ecole Superieure de Technologie - EST Laayoune
+- Faculte de Medecine et de Pharmacie - Laayoune
+- CPGE publiques - Laayoune
+- ISPITS - Laayoune
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+DAKHLA-OUED EDDAHAB
+============================================================
+
+DAKHLA
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Dakhla
+- Ecole Superieure de Technologie - EST Dakhla
+- CPGE publiques - Dakhla
+- ISPITS - Dakhla
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+============================================================
+AUTRES VILLES UNIVERSITAIRES IMPORTANTES
+============================================================
+
+BEN GUERIR / BENGUERIR
+[PUBLIC / PRIVE RECONNU / SPECIFIQUE]
+- Universite Mohammed VI Polytechnique - UM6P Ben Guerir
+- 1337 Coding School Ben Guerir
+
+[PRIVE]
+- Aucun autre etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+FQUIH BEN SALAH
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Fqih Ben Salah
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+TIZNIT
+[PUBLIC]
+- ISPITS - Tiznit
+
+[PRIVE]
+- Aucun etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+
+NOTES POUR CODEX / STOON
+- Ne pas stocker seulement le nom de la ville. Utiliser: region, ville, etablissement, type, statut.
+- Types recommandes: public_universitaire, public_ecole, public_cpge, public_sante, prive_autorise, prive_reconnu, specifique.
+- Garder un champ aliases pour les noms avec accents / sans accents: Laayoune, Laâyoune, Beni Mellal, Béni Mellal.
+- Les villes sans etablissement confirme peuvent rester dans la table villes, mais sans options d'etablissement.

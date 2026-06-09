@@ -78,7 +78,7 @@ cd stoon
 docker compose up -d
 ```
 
-Puis ouvrez phpMyAdmin :
+Avec Docker, configurez `DB_PORT=3307` dans `backend/.env`, puis ouvrez phpMyAdmin :
 
 - URL : `http://localhost:8080`
 - Serveur : `mysql`
@@ -92,6 +92,20 @@ Option locale :
 3. Créez une base `stoon_db` en `utf8mb4_unicode_ci`, ou importez `backend/database/schema.sql`.
 4. Importez `backend/database/seed.sql` pour des données mock rapides.
 5. Pour des mots de passe hashés automatiquement et garantis compatibles, utilisez plutôt `npm run db:seed`.
+
+## Catalogue académique
+
+Les sources du catalogue Région → Ville → Établissement → Filière sont conservées dans
+`backend/database/sources`. Pour régénérer le seed SQL et la copie locale utilisée par le frontend :
+
+```bash
+cd stoon/backend
+npm run db:academic:generate
+npm run db:academic:test
+npm run db:academic
+```
+
+La commande `db:academic` reconstruit les tables académiques puis importe le catalogue généré.
 
 ## Installation frontend
 
@@ -160,5 +174,4 @@ Le logo ST00N est présent dans :
 
 - `frontend/public/stoon-logo.svg`
 - `frontend/src/assets/logos/stoon-logo.svg`
-
-Remplacez ces fichiers par l'image officielle fournie si vous souhaitez utiliser un asset de marque externe.
+- `frontend/src/assets/logos/stoon-logo-full.svg`

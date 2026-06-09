@@ -1,5 +1,5 @@
 import { SlidersHorizontal } from "lucide-react";
-import { cities, fields, schools } from "../../utils/constants.js";
+import { AcademicSelects } from "./AcademicSelects.jsx";
 
 export function FilterBar({ filters, onChange, showCategory = false }) {
   const update = (key, value) => onChange({ ...filters, [key]: value });
@@ -10,30 +10,12 @@ export function FilterBar({ filters, onChange, showCategory = false }) {
         <SlidersHorizontal size={18} />
         Filtres
       </div>
-      <select value={filters.city || ""} onChange={(event) => update("city", event.target.value)}>
-        <option value="">Toutes les villes</option>
-        {cities.map((city) => (
-          <option key={city} value={city}>
-            {city}
-          </option>
-        ))}
-      </select>
-      <select value={filters.school || ""} onChange={(event) => update("school", event.target.value)}>
-        <option value="">Toutes les écoles</option>
-        {schools.map((school) => (
-          <option key={school} value={school}>
-            {school}
-          </option>
-        ))}
-      </select>
-      <select value={filters.fieldOfStudy || ""} onChange={(event) => update("fieldOfStudy", event.target.value)}>
-        <option value="">Toutes les filières</option>
-        {fields.map((field) => (
-          <option key={field} value={field}>
-            {field}
-          </option>
-        ))}
-      </select>
+      <AcademicSelects
+        value={filters}
+        onChange={(academic) => onChange({ ...filters, ...academic })}
+        layout="filter"
+        allowAll
+      />
       {showCategory && (
         <select value={filters.category || ""} onChange={(event) => update("category", event.target.value)}>
           <option value="">Toutes les catégories</option>

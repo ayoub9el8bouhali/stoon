@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { BrandLogo } from "../components/common/BrandLogo.jsx";
+import { AcademicSelects } from "../components/common/AcademicSelects.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
-import { cities, fields, schools } from "../utils/constants.js";
 
 export function RegisterPage() {
   const navigate = useNavigate();
@@ -12,9 +12,9 @@ export function RegisterPage() {
     lastName: "",
     email: "",
     password: "",
-    city: cities[0],
-    school: schools[0],
-    fieldOfStudy: fields[0],
+    city: "",
+    school: "",
+    fieldOfStudy: "",
     bio: ""
   });
   const [error, setError] = useState("");
@@ -62,30 +62,11 @@ export function RegisterPage() {
               required
             />
           </div>
-          <div className="col-md-4">
-            <label className="form-label">Ville</label>
-            <select className="form-select" value={form.city} onChange={(event) => update("city", event.target.value)}>
-              {cities.map((city) => (
-                <option key={city}>{city}</option>
-              ))}
-            </select>
-          </div>
-          <div className="col-md-4">
-            <label className="form-label">École</label>
-            <select className="form-select" value={form.school} onChange={(event) => update("school", event.target.value)}>
-              {schools.map((school) => (
-                <option key={school}>{school}</option>
-              ))}
-            </select>
-          </div>
-          <div className="col-md-4">
-            <label className="form-label">Filière</label>
-            <select className="form-select" value={form.fieldOfStudy} onChange={(event) => update("fieldOfStudy", event.target.value)}>
-              {fields.map((field) => (
-                <option key={field}>{field}</option>
-              ))}
-            </select>
-          </div>
+          <AcademicSelects
+            value={form}
+            onChange={(academic) => setForm((current) => ({ ...current, ...academic }))}
+            required
+          />
           <div className="col-12">
             <label className="form-label">Bio</label>
             <textarea className="form-control" rows="3" value={form.bio} onChange={(event) => update("bio", event.target.value)} />

@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { Upload } from "lucide-react";
-import { cities, fields, moduleConfig, schools } from "../../utils/constants.js";
+import { AcademicSelects } from "../common/AcademicSelects.jsx";
+import { moduleConfig } from "../../utils/constants.js";
 
 const baseState = {
   module: "housing",
   title: "",
   description: "",
-  city: "Casablanca",
-  school: "EMSI Casablanca",
-  fieldOfStudy: "Informatique",
+  city: "",
+  school: "",
+  fieldOfStudy: "",
   price: "",
   category: "document",
   type: "colocation",
@@ -25,24 +26,31 @@ const baseState = {
 export function ListingForm({ onSubmit }) {
   const [form, setForm] = useState(baseState);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const update = (key, value) => setForm((current) => ({ ...current, [key]: value }));
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    onSubmit(form.module, {
-      ...form,
-      price: Number(form.price || 0),
-      status: "active",
-      views: 0
-    });
-    setSubmitted(true);
-    setForm(baseState);
+    setError("");
+    try {
+      await onSubmit(form.module, {
+        ...form,
+        price: Number(form.price || 0),
+        seatsAvailable: Number(form.seatsAvailable || 1),
+        capacity: Number(form.capacity || 40)
+      });
+      setSubmitted(true);
+      setForm(baseState);
+    } catch (submitError) {
+      setError(submitError.response?.data?.message || "Impossible de publier l'annonce.");
+    }
   };
 
   return (
     <form className="stoon-form" onSubmit={handleSubmit}>
-      {submitted && <div className="alert alert-success">Annonce publiée avec succès en simulation.</div>}
+      {submitted && <div className="alert alert-success">Annonce publiée avec succès.</div>}
+      {error && <div className="alert alert-danger">{error}</div>}
 
       <div className="row g-3">
         <div className="col-md-6">
@@ -89,34 +97,11 @@ export function ListingForm({ onSubmit }) {
             placeholder="Décrivez l'annonce, les conditions et les détails utiles."
           />
         </div>
-        <div className="col-md-4">
-          <label className="form-label">Ville</label>
-          <select className="form-select" value={form.city} onChange={(event) => update("city", event.target.value)}>
-            {cities.map((city) => (
-              <option key={city}>{city}</option>
-            ))}
-          </select>
-        </div>
-        <div className="col-md-4">
-          <label className="form-label">École</label>
-          <select className="form-select" value={form.school} onChange={(event) => update("school", event.target.value)}>
-            {schools.map((school) => (
-              <option key={school}>{school}</option>
-            ))}
-          </select>
-        </div>
-        <div className="col-md-4">
-          <label className="form-label">Filière</label>
-          <select
-            className="form-select"
-            value={form.fieldOfStudy}
-            onChange={(event) => update("fieldOfStudy", event.target.value)}
-          >
-            {fields.map((field) => (
-              <option key={field}>{field}</option>
-            ))}
-          </select>
-        </div>
+        <AcademicSelects
+          value={form}
+          onChange={(academic) => setForm((current) => ({ ...current, ...academic }))}
+          required
+        />
 
         {form.module === "marketplace" && (
           <div className="col-md-6">

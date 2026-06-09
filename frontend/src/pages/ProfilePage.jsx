@@ -1,22 +1,29 @@
 import { useState } from "react";
 import { Camera, Star } from "lucide-react";
+import { AcademicSelects } from "../components/common/AcademicSelects.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
 import { useData } from "../context/DataContext.jsx";
-import { fields, cities, schools } from "../utils/constants.js";
 import { fullName } from "../utils/formatters.js";
 
 export function ProfilePage() {
   const { user, updateUser } = useAuth();
   const { reviews, allListings } = useData();
   const [form, setForm] = useState(user);
+  const [message, setMessage] = useState("");
   const userReviews = reviews.filter((review) => review.targetUserId === user?.id);
   const publications = allListings.filter((item) => item.ownerId === user?.id);
 
   const update = (key, value) => setForm((current) => ({ ...current, [key]: value }));
 
-  const submit = (event) => {
+  const submit = async (event) => {
     event.preventDefault();
-    updateUser(form);
+    setMessage("");
+    try {
+      await updateUser(form);
+      setMessage("Profil enregistré avec succès.");
+    } catch {
+      setMessage("Impossible d'enregistrer le profil.");
+    }
   };
 
   return (
@@ -50,6 +57,7 @@ export function ProfilePage() {
 
         <section className="profile-form-panel">
           <form className="stoon-form" onSubmit={submit}>
+            {message && <div className="alert alert-info">{message}</div>}
             <div className="row g-3">
               <div className="col-md-6">
                 <label className="form-label">Prénom</label>
@@ -59,34 +67,11 @@ export function ProfilePage() {
                 <label className="form-label">Nom</label>
                 <input className="form-control" value={form?.lastName || ""} onChange={(event) => update("lastName", event.target.value)} />
               </div>
-              <div className="col-md-4">
-                <label className="form-label">Ville</label>
-                <select className="form-select" value={form?.city || ""} onChange={(event) => update("city", event.target.value)}>
-                  {cities.map((city) => (
-                    <option key={city}>{city}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="col-md-4">
-                <label className="form-label">École</label>
-                <select className="form-select" value={form?.school || ""} onChange={(event) => update("school", event.target.value)}>
-                  {schools.map((school) => (
-                    <option key={school}>{school}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="col-md-4">
-                <label className="form-label">Filière</label>
-                <select
-                  className="form-select"
-                  value={form?.fieldOfStudy || ""}
-                  onChange={(event) => update("fieldOfStudy", event.target.value)}
-                >
-                  {fields.map((field) => (
-                    <option key={field}>{field}</option>
-                  ))}
-                </select>
-              </div>
+              <AcademicSelects
+                value={form || {}}
+                onChange={(academic) => setForm((current) => ({ ...current, ...academic }))}
+                required
+              />
               <div className="col-12">
                 <label className="form-label">Photo</label>
                 <label className="upload-zone">

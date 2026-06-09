@@ -29,7 +29,7 @@ export function ListingDetailPage() {
     );
   }
 
-  const owner = mockUsers.find((candidate) => candidate.id === item.ownerId);
+  const owner = item.owner || mockUsers.find((candidate) => candidate.id === item.ownerId);
   const config = moduleConfig[item.module];
   const favorited = favorites.some((favorite) => favorite.module === item.module && favorite.id === item.id);
   const canReserve = item.module === "rides" || item.module === "events";
@@ -147,7 +147,7 @@ export function ListingDetailPage() {
           </button>
         }
       >
-        <p>La réservation sera enregistrée et une notification simulée sera envoyée au propriétaire.</p>
+        <p>La réservation sera enregistrée et le propriétaire recevra une notification.</p>
       </BootstrapModal>
 
       <BootstrapModal

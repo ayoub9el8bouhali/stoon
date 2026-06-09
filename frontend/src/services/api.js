@@ -27,5 +27,8 @@ export const endpoints = {
   jobs: "/jobs",
   messages: "/messages",
   reviews: "/reviews",
-  admin: "/admin"
+  admin: "/admin",
+  cities: "/cities",
+  schools: "/schools",
+  programs: "/programs"
 };

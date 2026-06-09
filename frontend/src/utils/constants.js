@@ -1,25 +1,3 @@
-export const cities = ["Casablanca", "Rabat", "Marrakech", "Fès", "Tanger", "Agadir", "Oujda"];
-
-export const schools = [
-  "EMSI Casablanca",
-  "UIR",
-  "ENSA Marrakech",
-  "Université Sidi Mohamed Ben Abdellah",
-  "ENCG Tanger",
-  "UM6P",
-  "ENSAM Rabat"
-];
-
-export const fields = [
-  "Informatique",
-  "Médecine",
-  "Commerce",
-  "Finance",
-  "Génie industriel",
-  "Architecture",
-  "Droit"
-];
-
 export const moduleConfig = {
   housing: {
     label: "Colocation",

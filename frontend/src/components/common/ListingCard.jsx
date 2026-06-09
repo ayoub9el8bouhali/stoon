@@ -16,7 +16,7 @@ export function ListingCard({ item }) {
   const { isAuthenticated } = useAuth();
   const { favorites, toggleFavorite } = useData();
   const config = moduleConfig[item.module];
-  const owner = mockUsers.find((user) => user.id === item.ownerId);
+  const owner = item.owner || mockUsers.find((user) => user.id === item.ownerId);
   const favorited = favorites.some((favorite) => favorite.module === item.module && favorite.id === item.id);
   const route = `/annonces/${item.module}/${item.id}`;
 

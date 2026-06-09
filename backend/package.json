@@ -9,6 +9,8 @@
     "start": "node server.js",
     "db:sync": "node database/sync.js",
     "db:seed": "node database/seed.js",
+    "db:academic:generate": "node database/generateAcademicCatalog.js",
+    "db:academic:test": "node --test database/academicCatalog.test.js",
     "db:academic": "node database/academicSetup.js"
   },
   "dependencies": {

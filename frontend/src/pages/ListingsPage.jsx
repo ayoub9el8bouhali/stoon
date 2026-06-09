@@ -6,6 +6,8 @@ import { SearchBar } from "../components/common/SearchBar.jsx";
 import { EmptyState } from "../components/common/EmptyState.jsx";
 import { Pagination } from "../components/common/Pagination.jsx";
 import { useData } from "../context/DataContext.jsx";
+import { useAcademicCatalog } from "../context/AcademicCatalogContext.jsx";
+import { OTHER_SCHOOL_VALUE, isOtherSchool } from "../utils/academicCatalog.js";
 import { moduleConfig } from "../utils/constants.js";
 
 const pageSize = 6;
@@ -14,6 +16,7 @@ export function ListingsPage() {
   const { module } = useParams();
   const activeModule = module && moduleConfig[module] ? module : "all";
   const { allListings } = useData();
+  const { catalog } = useAcademicCatalog();
   const [query, setQuery] = useState("");
   const [filters, setFilters] = useState({ sort: "recent" });
   const [page, setPage] = useState(1);
@@ -32,7 +35,10 @@ export function ListingsPage() {
           .includes(normalizedQuery);
 
       const matchesCity = !filters.city || item.city === filters.city;
-      const matchesSchool = !filters.school || item.school === filters.school;
+      const matchesSchool =
+        !filters.school ||
+        item.school === filters.school ||
+        (filters.school === OTHER_SCHOOL_VALUE && isOtherSchool(catalog, item.city, item.school));
       const matchesField = !filters.fieldOfStudy || item.fieldOfStudy === filters.fieldOfStudy || item.fieldOfStudy === "Toutes filières";
       const matchesCategory = !filters.category || item.category === filters.category;
 
@@ -45,7 +51,7 @@ export function ListingsPage() {
       if (filters.sort === "popular") return Number(b.views || 0) - Number(a.views || 0);
       return new Date(b.createdAt) - new Date(a.createdAt);
     });
-  }, [activeModule, allListings, filters, query]);
+  }, [activeModule, allListings, catalog, filters, query]);
 
   const pages = Math.ceil(filtered.length / pageSize) || 1;
   const currentPage = Math.min(page, pages);

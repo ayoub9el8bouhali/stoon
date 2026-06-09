@@ -1,13 +1,11 @@
 import { schoolModel } from "../models/schoolModel.js";
 
-const validTypes = ["publique", "privée"];
 const isMissing = (value) => value === undefined || value === null || value === "";
 
 const validateSchool = (body) => {
   if (isMissing(body.nom)) return "Le champ nom est obligatoire";
-  if (!validTypes.includes(body.type)) return "Le type doit être publique ou privée";
+  if (isMissing(body.statut)) return "Le champ statut est obligatoire";
   if (isMissing(body.ville_id)) return "Le champ ville_id est obligatoire";
-  if (isMissing(body.description)) return "Le champ description est obligatoire";
   return null;
 };
 
@@ -74,4 +72,3 @@ export const schoolController = {
     }
   }
 };
-

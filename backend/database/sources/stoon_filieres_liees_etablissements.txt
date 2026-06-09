@@ -1,0 +1,1275 @@
+STOON - FILIERES LIEES AUX ETABLISSEMENTS PAR VILLE
+Version de travail pour seed data / Codex
+
+IMPORTANT
+- Ce fichier relie chaque établissement de la liste STOON aux filières/domaines principaux à proposer dans les filtres.
+- Pour les facultés et grandes écoles publiques, les filières suivent les familles indiquées dans le répertoire AMCI 2024-2025.
+- Pour les établissements privés, les filières sont une base fonctionnelle par domaine d'école. Les intitulés exacts accrédités peuvent changer selon l'année universitaire et doivent être vérifiés dans la liste officielle MESRSI des filières accréditées.
+- Pour STOON, cette base est suffisante pour créer les menus déroulants Région > Ville > Etablissement > Filière, puis affiner progressivement.
+
+FORMAT
+REGION
+VILLE
+[STATUT]
+- ETABLISSEMENT
+  Filières: ...
+
+============================================================
+
+
+CASABLANCA-SETTAT
+============================================================
+
+CASABLANCA
+------------------------------------------------------------
+[PUBLIC]
+- Universite Hassan II de Casablanca
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie de Casablanca
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- Faculte de Medecine Dentaire de Casablanca
+  Filières: Médecine dentaire; Odontologie; Chirurgie dentaire
+[PUBLIC]
+- Faculte des Sciences - Casablanca
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Ain Chock
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Ben M'Sik
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - Casablanca
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Casablanca
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines Ben M'Sik
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Casablanca
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Nationale Superieure d'Electricite et de Mecanique - ENSEM Casablanca
+  Filières: Génie électrique; Génie mécanique; Génie industriel; Automatique; Systèmes embarqués; Énergétique; Maintenance industrielle
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Casablanca
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- CPGE publiques - Casablanca
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Casablanca
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Universite Mohammed VI des Sciences de la Sante - UM6SS Casablanca
+  Filières: Médecine; Pharmacie; Médecine dentaire; Sciences infirmières; Kinésithérapie; Orthophonie; Psychomotricité; Santé publique; Biologie médicale; Ingénierie biomédicale; Management de la santé
+[PRIVE AUTORISE / RECONNU]
+- Universite Internationale de Casablanca - UIC
+  Filières: Management; Finance; Marketing; Génie informatique; Génie industriel; Génie civil/BTP; Architecture/Design; Santé; Paramédical; Droit
+[PRIVE AUTORISE / RECONNU]
+- Universite Privee Mundiapolis - Casablanca
+  Filières: Génie informatique; Réseaux et télécommunications; Data/IA; Génie industriel; Management; Finance; Marketing; Droit des affaires; Sciences politiques; Logistique
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur du Genie Applique - IGA Casablanca
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Atlantic Business School Privee - ABS Casablanca
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Casablanca
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Casablanca
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes de Management - HEM Casablanca
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- ESCA Ecole de Management
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur de Formation en Technologie Agroalimentaire et Genie Applique - ISFORT
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes Bancaires, Financieres et Manageriales - HBFG Casablanca
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes de Biotechnologie et de Sante Privee - EHEB
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Communication et de Publicite - Com'Sup Casablanca
+  Filières: Journalisme; Communication; Relations publiques; Publicité; Marketing digital; Audiovisuel; Médias numériques; Rédaction web
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur Maghrebin d'Optique et d'Optometrie - ISMOO
+  Filières: Optométrie; Optique; Contactologie; Basse vision; Gestion de magasin optique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Kinesitherapie et du Paramedical - ESKP
+  Filières: Kinésithérapie; Rééducation fonctionnelle; Physiothérapie; Sport-santé; Anatomie/biomécanique
+[PRIVE AUTORISE / RECONNU]
+- Haute Ecole de Kinesitherapie - HEK
+  Filières: Kinésithérapie; Rééducation fonctionnelle; Physiothérapie; Sport-santé; Anatomie/biomécanique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure en Ingenierie, Management et Genie Civil - ESTEM
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institut Polytechnique Prive de Casablanca
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur du Journalisme et de Communication - ISJC
+  Filières: Journalisme; Communication; Relations publiques; Publicité; Marketing digital; Audiovisuel; Médias numériques; Rédaction web
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur des Sciences de Technologie - SIST Casablanca
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur du Journalisme et de l'Information - IFJSUP Casablanca
+  Filières: Journalisme; Communication; Relations publiques; Publicité; Marketing digital; Audiovisuel; Médias numériques; Rédaction web
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Psychologie - ESP
+  Filières: Psychologie clinique; Psychologie du travail; Psychologie sociale; Psychopédagogie
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Multimedia, Informatique et Reseaux - SUPEMIR
+  Filières: Génie civil; Génie informatique; Génie électrique; Génie industriel; Génie mécanique; Génie minéral; Hydraulique et environnement; Télécommunications
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur d'Optique Theorique et Appliquee Prive - ISOTA
+  Filières: Optométrie; Optique; Contactologie; Basse vision; Gestion de magasin optique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Design Art Com-Sup Casablanca
+  Filières: Design graphique; UX/UI Design; Communication visuelle; Design digital; Animation; Audiovisuel; Architecture intérieure; Direction artistique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Architecture de Casablanca - EAC
+  Filières: Architecture; Urbanisme; Architecture intérieure; Design d’espace; Patrimoine; Paysage
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Hautes Etudes en Technologie de l'Information et de la Communication Privee - Sup Technology
+  Filières: Journalisme; Communication; Relations publiques; Publicité; Marketing digital; Audiovisuel; Médias numériques; Rédaction web
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur du Transport et de la Logistique - ISTL Casablanca
+  Filières: Transport; Logistique; Supply chain management; Transit douane; Gestion portuaire; Achats
+[PRIVE AUTORISE / RECONNU]
+- Institut Specialise Prive des Sciences de la Sante - ISPS
+  Filières: Médecine; Pharmacie; Médecine dentaire; Sciences infirmières; Kinésithérapie; Orthophonie; Psychomotricité; Santé publique; Biologie médicale; Ingénierie biomédicale; Management de la santé
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Management et de Communication - ESMC
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Design et des Arts Visuels - ESDAV
+  Filières: Design graphique; UX/UI Design; Communication visuelle; Design digital; Animation; Audiovisuel; Architecture intérieure; Direction artistique
+[PRIVE AUTORISE / RECONNU]
+- Ecole d'Ingenierie en Genie des Systemes Industriels de Casablanca - EIGSICA
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecoles des Hautes Etudes des Sciences et Techniques de l'Ingenierie et du Management Privee - HESTIM
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure Privee de l'Innovation Informatique et Technologique - INNOV INFO
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Management et de Gestion des Ressources Humaines - SUP'RH
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Journalisme et de Communication - ESJC
+  Filières: Journalisme; Communication; Relations publiques; Publicité; Marketing digital; Audiovisuel; Médias numériques; Rédaction web
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Ingenierie de la Sante et de Management de Projets - ESISMP
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Ingenierie Informatique et Multimedia - ES2IM
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- RT AEROSUP Casablanca
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Sciences Economiques et de Management - ESSEM
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Sciences de la Sante - ESSS
+  Filières: Médecine; Pharmacie; Médecine dentaire; Sciences infirmières; Kinésithérapie; Orthophonie; Psychomotricité; Santé publique; Biologie médicale; Ingénierie biomédicale; Management de la santé
+[PRIVE AUTORISE / RECONNU]
+- Ecole Centrale de Casablanca - ECC
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE / RECONNU]
+- ADALIA Private Institute of Management
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes en Paramedicales et Sociales - IHEPS Casablanca
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- TBS Casablanca Business School
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur d'Ingenierie et des Affaires - ISGA Casablanca
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- EDGE Private Business School
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- HEM Engineering School Casablanca
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Affaires de Casablanca - ESAC
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur des Etudes Paramedicales de Casablanca - ISEP Casablanca
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur Prive des Etudes Paramedicales - ISPEP
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Privee Superieure d'Ingenierie Numerique et Systemes d'Intelligence Artificielle - EPSINSIA
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- EDUMED Ecole Superieure Privee du Paramedical et de la Reeducation
+  Filières: Kinésithérapie; Rééducation fonctionnelle; Physiothérapie; Sport-santé; Anatomie/biomécanique
+[PRIVE AUTORISE / RECONNU]
+- Atlantic Engineering School Privee - AES Casablanca
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+
+MOHAMMEDIA
+------------------------------------------------------------
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Mohammedia
+  Filières: MIP : Mathématiques-Informatique-Physique; MIPC : Mathématiques-Informatique-Physique-Chimie; BCG : Biologie-Chimie-Géologie; Génie informatique; Génie électrique; Génie mécanique; Génie industriel; Génie civil; Génie des procédés; Énergies renouvelables; Environnement; Biotechnologie
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Mohammedia
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Mohammedia
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Normale Superieure de l'Enseignement Technique - ENSET Mohammedia
+  Filières: Génie électrique; Génie mécanique; Génie informatique; Génie industriel; Éducation technique; Management industriel
+[PUBLIC]
+- CPGE publiques - Mohammedia
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PRIVE AUTORISE]
+- Ecole Superieure des Etudes Juridiques et Economiques - ESEJE Mohammedia
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PRIVE AUTORISE]
+- Ecole Superieure en Genie Biomedical et Techniques de Sante Privee - SUPTECH SANTE Mohammedia
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+NOUACEUR / BOUSKOURA
+------------------------------------------------------------
+[PRIVE AUTORISE / RECONNU]
+- Universite Privee Mundiapolis - Casablanca / Nouaceur
+  Filières: Génie informatique; Réseaux et télécommunications; Data/IA; Génie industriel; Management; Finance; Marketing; Droit des affaires; Sciences politiques; Logistique
+[PRIVE AUTORISE / RECONNU]
+- Universite Internationale de Casablanca - UIC, zone Casablanca / Bouskoura
+  Filières: Management; Finance; Marketing; Génie informatique; Génie industriel; Génie civil/BTP; Architecture/Design; Santé; Paramédical; Droit
+[PRIVE AUTORISE / RECONNU]
+- Ecole Centrale de Casablanca - ECC, Bouskoura / Ville Verte
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE / RECONNU]
+- International Institute of Management Casablanca Prive - IIMC Bouskoura
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- International Institute of Engineering Casablanca Prive - IIEC Bouskoura
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+
+SETTAT
+------------------------------------------------------------
+[PUBLIC]
+- Universite Hassan I de Settat
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Settat
+  Filières: MIP : Mathématiques-Informatique-Physique; MIPC : Mathématiques-Informatique-Physique-Chimie; BCG : Biologie-Chimie-Géologie; Génie informatique; Génie électrique; Génie mécanique; Génie industriel; Génie civil; Génie des procédés; Énergies renouvelables; Environnement; Biotechnologie
+[PUBLIC]
+- Faculte des Sciences Juridiques et Politiques - FSJP Settat
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte d'Economie et de Gestion - FEG Settat
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Langues, Arts et Sciences Humaines - FLASH Settat
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Settat
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- CPGE publiques - Settat
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Settat
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE]
+- Ecole Superieure des Reseaux Informatiques et de Management - ESRIM Settat
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+
+EL JADIDA
+------------------------------------------------------------
+[PUBLIC]
+- Universite Chouaib Doukkali
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte des Sciences - El Jadida
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES El Jadida
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - El Jadida
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG El Jadida
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- CPGE publiques - El Jadida
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+
+BERRECHID
+------------------------------------------------------------
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Berrechid
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PRIVE AUTORISE]
+- Ecole Superieure Business de Berrechid Privee
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+
+KHOURIBGA
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Khouribga
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- CPGE publiques - Khouribga
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+
+SIDI BENNOUR
+------------------------------------------------------------
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Sidi Bennour
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+
+RABAT-SALE-KENITRA
+============================================================
+
+RABAT
+------------------------------------------------------------
+[PUBLIC]
+- Universite Mohammed V de Rabat
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie de Rabat
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- Faculte de Medecine Dentaire de Rabat
+  Filières: Médecine dentaire; Odontologie; Chirurgie dentaire
+[PUBLIC]
+- Faculte des Sciences de Rabat
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - Rabat
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Rabat
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Mohammadia d'Ingenieurs - EMI
+  Filières: Génie civil; Génie informatique; Génie électrique; Génie industriel; Génie mécanique; Génie minéral; Hydraulique et environnement; Télécommunications
+[PUBLIC]
+- Ecole Nationale Superieure d'Informatique et d'Analyse des Systemes - ENSIAS
+  Filières: Génie logiciel; Intelligence artificielle; Data science; Cybersécurité; Réseaux et systèmes; Cloud/DevOps; Systèmes embarqués; Business intelligence
+[PUBLIC]
+- Institut National de Statistique et d'Economie Appliquee - INSEA
+  Filières: Statistique; Data science; Actuariat; Finance quantitative; Économie appliquée; Recherche opérationnelle; Big data
+[PUBLIC]
+- Ecole Nationale Superieure d'Arts et Metiers - ENSAM Rabat
+  Filières: Génie mécanique; Génie industriel; Électromécanique; Mécatronique; Génie énergétique; Systèmes industriels
+[PUBLIC]
+- Ecole Normale Superieure - ENS Rabat
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Ecole Nationale d'Architecture - ENA Rabat
+  Filières: Architecture; Urbanisme; Architecture intérieure; Design d’espace; Patrimoine; Paysage
+[PUBLIC]
+- Institut Agronomique et Veterinaire Hassan II - IAV Hassan II
+  Filières: Agronomie; Médecine vétérinaire; Industries agroalimentaires; Topographie/Géomatique; Génie rural; Horticulture; Environnement; Eau et sols
+[PUBLIC]
+- Institut National d'Amenagement et d'Urbanisme - INAU
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Institut Superieur de l'Information et de la Communication - ISIC
+  Filières: Journalisme; Communication; Relations publiques; Publicité; Marketing digital; Audiovisuel; Médias numériques; Rédaction web
+[PUBLIC]
+- Institut Superieur d'Arts Dramatiques et d'Animation Culturelle - ISADAC
+  Filières: Design graphique; UX/UI Design; Communication visuelle; Design digital; Animation; Audiovisuel; Architecture intérieure; Direction artistique
+[PUBLIC]
+- Ecole Nationale de Sante Publique - ENSP
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PUBLIC]
+- Dar Al Hadith Al Hassania
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- CPGE publiques - Rabat
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PRIVE AUTORISE / RECONNU]
+- Universite Internationale de Rabat - UIR
+  Filières: Business/Management; Génie informatique; Génie industriel; Énergies renouvelables; Aéronautique/Automobile; Architecture; Droit/Sciences politiques; Médecine dentaire; Santé; Data/IA
+[PRIVE AUTORISE / RECONNU]
+- Universite Internationale Abulcasis des Sciences de Sante - UIASS Rabat
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- High Technology School in Morocco - HIGH-TECH Rabat
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE / RECONNU]
+- International Institute for Higher Education in Morocco - IIHEM Rabat
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Rabat
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes de Commerce - HEC Rabat
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes de Management - HEM Rabat
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur d'Ingenierie et des Affaires Prive Rabat - ISGA Rabat
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Rabat
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institute for Leadership and Communication Studies - ILCS Rabat
+  Filières: Journalisme; Communication; Relations publiques; Publicité; Marketing digital; Audiovisuel; Médias numériques; Rédaction web
+[PRIVE AUTORISE / RECONNU]
+- Ecole Marocaine de Banque et de Commerce International - EMBCI Rabat
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Optique Appliquee et du Paramedicale Prive - ESO Rabat
+  Filières: Optométrie; Optique; Contactologie; Basse vision; Gestion de magasin optique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Architecture d'Interieur - ESAI Rabat
+  Filières: Architecture; Urbanisme; Architecture intérieure; Design d’espace; Patrimoine; Paysage
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur Vinci d'Ingenierie Informatique et de Reseaux de Telecommunications - ISVIRT Rabat
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Private International Institute of Management and Technologie - PIIMT Rabat / Temara
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Design Art Com Sup Rabat
+  Filières: Design graphique; UX/UI Design; Communication visuelle; Design digital; Animation; Audiovisuel; Architecture intérieure; Direction artistique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Management, Informatique et Telecommunications - SUPMTI Rabat
+  Filières: Management; Finance; Marketing; Tourisme/Hôtellerie; Génie informatique; Génie industriel; Architecture; Santé; Design
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur des Hautes Etudes en Developpement Durable - ISHEDD Rabat
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE / RECONNU]
+- Ecole Marocaine d'Ingenierie - EMG Rabat
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Superior Institutions of Sciences and Technology - SIST Rabat
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Rabat en Management et Ingenierie - ESRMI Rabat
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Sciences et Technologies de l'Ingenierie - ESSTI Rabat
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur de Management, d'Administration et de Genie Informatique - ISMAGI Rabat
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- JUNIA Maroc Ecole d'Ingenierie Privee Rabat
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- ESLSCA Business School Rabat
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+
+SALE
+------------------------------------------------------------
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Sale
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Sale
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- Institut Royal de la Formation des Cadres - IRFC Sale
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- CPGE publiques - Sale
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PRIVE AUTORISE]
+- Ecole des Sciences Economiques et Commerciales - ESSEC Sale / Bouknadel
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PRIVE AUTORISE]
+- Ecole Superieure des Sciences et de l'Ingenierie Bouregreg Privee - ESSIB Sale
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE]
+- Ecole Arts et Metiers Campus de Rabat - EAMR, Sale El Jadida
+  Filières: Design graphique; UX/UI Design; Communication visuelle; Design digital; Animation; Audiovisuel; Architecture intérieure; Direction artistique
+
+KENITRA
+------------------------------------------------------------
+[PUBLIC]
+- Universite Ibn Tofail
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte des Sciences - Kenitra
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Juridiques et Politiques - FSJP Kenitra
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte d'Economie et de Gestion - FEG Kenitra
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Langues, des Lettres et des Arts - FLAL Kenitra
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Faculte des Sciences Humaines et Sociales - FSHS Kenitra
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Kenitra
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Kenitra
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Kenitra
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- CPGE publiques - Kenitra
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Kenitra
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE]
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Kenitra
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE]
+- Ecole des Hautes Etudes de l'Ingenierie Commerciale et Management - EHESICOM Kenitra
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE]
+- Institut Superieur de Comptabilite, d'Administration et de Commerce - ICACSUP Kenitra
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE]
+- Hautes Etudes de Commerce, de Gestion et d'Informatique - HECGI Kenitra
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+
+FES-MEKNES
+============================================================
+
+FES
+------------------------------------------------------------
+[PUBLIC]
+- Universite Sidi Mohamed Ben Abdellah - USMBA Fes
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie de Fes
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- Faculte des Sciences - Fes
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Fes
+  Filières: MIP : Mathématiques-Informatique-Physique; MIPC : Mathématiques-Informatique-Physique-Chimie; BCG : Biologie-Chimie-Géologie; Génie informatique; Génie électrique; Génie mécanique; Génie industriel; Génie civil; Génie des procédés; Énergies renouvelables; Environnement; Biotechnologie
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Fes
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Fes
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Faculte de la Chariaa - Fes
+  Filières: Chariaa et droit; Études islamiques; Droit musulman
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Fes
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Fes
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- Ecole Nationale d'Architecture - ENA Fes
+  Filières: Architecture; Urbanisme; Architecture intérieure; Design d’espace; Patrimoine; Paysage
+[PUBLIC]
+- CPGE publiques - Fes
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Fes
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Universite Euro-Mediterraneenne de Fes - UEMF
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE / RECONNU]
+- Universite Privee de Fes - UPF
+  Filières: Management; Finance; Marketing; Génie informatique; Génie civil; Architecture; Santé; Droit
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Fes
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Management, du Commerce et d'Informatique - SUP'MANAGEMENT Fes
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Optique et de Lunetterie - ESOL Fes
+  Filières: Optométrie; Optique; Contactologie; Basse vision; Gestion de magasin optique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Ingenierie en Sciences Appliquees - ESISA Fes
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes Comptables et Financieres - HECF Fes
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Telecommunication et de Management - SUPTEMA Fes
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur d'Ingenierie et des Affaires - ISGA Fes
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Ingenierie Automobile et Aeronautique - ESI2A Fes
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Fes Privee
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+
+MEKNES
+------------------------------------------------------------
+[PUBLIC]
+- Universite Moulay Ismail - Meknes
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte des Sciences - Meknes
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Meknes
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Meknes
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Meknes
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Nationale Superieure d'Arts et Metiers - ENSAM Meknes
+  Filières: Génie mécanique; Génie industriel; Électromécanique; Mécatronique; Génie énergétique; Systèmes industriels
+[PUBLIC]
+- Ecole Nationale d'Agriculture - ENA Meknes
+  Filières: Agronomie; Horticulture; Protection des plantes; Agroéconomie; Productions animales; Productions végétales; Irrigation; Agroalimentaire
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Meknes
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- CPGE publiques - Meknes
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Meknes
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE]
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Meknes
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE]
+- Ecole des Hautes Etudes Comptables et Financieres - HECF Meknes
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE]
+- Ecole Marocaine Superieure d'Informatique et Gestion - EMSIG Meknes
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE]
+- Ecole Superieure de Genie Civil et des Nouvelles Technologies - ESGCNT Meknes
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PRIVE AUTORISE]
+- Ecole Superieure de Management, Informatique et Telecommunication - SUPMTI Meknes
+  Filières: Management; Finance; Marketing; Tourisme/Hôtellerie; Génie informatique; Génie industriel; Architecture; Santé; Design
+
+TAZA
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Taza
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- CPGE publiques - Taza
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Taza
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE]
+- Ecole Superieure de Management et d'Ingenierie de l'Orient - Orient Sup de Management Taza
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+
+IFRANE
+------------------------------------------------------------
+[PUBLIC / SPECIFIQUE]
+- Universite Al Akhawayn - AUI Ifrane
+  Filières: Computer Science; Software Engineering; Business Administration; Finance; Marketing; International Studies; Communication; Engineering; Data/AI
+[PRIVE]
+- Aucun autre etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+
+TAOUNATE
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Taounate / Taounat - Universite Sidi Mohamed Ben Abdellah
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+
+MARRAKECH-SAFI
+============================================================
+
+MARRAKECH
+------------------------------------------------------------
+[PUBLIC]
+- Universite Cadi Ayyad - Marrakech
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie de Marrakech
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- Faculte des Sciences Semlalia - Marrakech
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Marrakech
+  Filières: MIP : Mathématiques-Informatique-Physique; MIPC : Mathématiques-Informatique-Physique-Chimie; BCG : Biologie-Chimie-Géologie; Génie informatique; Génie électrique; Génie mécanique; Génie industriel; Génie civil; Génie des procédés; Énergies renouvelables; Environnement; Biotechnologie
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Marrakech
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Marrakech
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Faculte Allogha Al Arabia - Marrakech
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Marrakech
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Marrakech
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PUBLIC]
+- Ecole Nationale d'Architecture - ENA Marrakech
+  Filières: Architecture; Urbanisme; Architecture intérieure; Design d’espace; Patrimoine; Paysage
+[PUBLIC]
+- Institut des Mines - Marrakech
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- CPGE publiques - Marrakech
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Marrakech
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Universite Privee Marrakech Tensift El Haouz - UPM
+  Filières: Management; Finance; Marketing; Tourisme/Hôtellerie; Génie informatique; Génie industriel; Architecture; Santé; Design
+[PRIVE AUTORISE / RECONNU]
+- Sup de Co - Ecole Superieure de Commerce - Marrakech
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Management et de Technologie Informatique Appliques Privee - ESMA Marrakech
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes Economiques, Commerciales et d'Ingenierie - HEEC Marrakech
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes de Management - HEM Marrakech
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Marrakech
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur d'Ingenierie et des Affaires - ISGA Marrakech
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes en Paramedical du Sud - IHEPS Marrakech
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Arts Visuels Privee - ESAV Marrakech
+  Filières: Design graphique; UX/UI Design; Communication visuelle; Design digital; Animation; Audiovisuel; Architecture intérieure; Direction artistique
+[PRIVE AUTORISE / RECONNU]
+- Grande Ecole de Commerce de Marrakech - GECM
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur du Journalisme et de l'Information - IFJSUP Marrakech
+  Filières: Journalisme; Communication; Relations publiques; Publicité; Marketing digital; Audiovisuel; Médias numériques; Rédaction web
+
+SAFI
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Safi
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Safi
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Safi
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- CPGE publiques - Safi
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Safi
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+ESSAOUIRA
+------------------------------------------------------------
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Essaouira
+  Filières: Business/Management; Génie informatique; Génie industriel; Énergies renouvelables; Aéronautique/Automobile; Architecture; Droit/Sciences politiques; Médecine dentaire; Santé; Data/IA
+[PUBLIC]
+- ISPITS - Essaouira
+  Filières: Business/Management; Génie informatique; Génie industriel; Énergies renouvelables; Aéronautique/Automobile; Architecture; Droit/Sciences politiques; Médecine dentaire; Santé; Data/IA
+[PRIVE AUTORISE]
+- Ecole Superieure en Genie Biomedical et Techniques de Sante Essaouira Privee - SUPTECH SANTE Essaouira
+  Filières: Business/Management; Génie informatique; Génie industriel; Énergies renouvelables; Aéronautique/Automobile; Architecture; Droit/Sciences politiques; Médecine dentaire; Santé; Data/IA
+
+KELAA DES SRAGHNA / KALAA SERAGHNA
+------------------------------------------------------------
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Kalaa Seraghna
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+
+TANGER-TETOUAN-AL HOCEIMA
+============================================================
+
+TANGER
+------------------------------------------------------------
+[PUBLIC]
+- Universite Abdelmalek Essaadi - Tanger / Tetouan
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie de Tanger
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Tanger
+  Filières: MIP : Mathématiques-Informatique-Physique; MIPC : Mathématiques-Informatique-Physique-Chimie; BCG : Biologie-Chimie-Géologie; Génie informatique; Génie électrique; Génie mécanique; Génie industriel; Génie civil; Génie des procédés; Énergies renouvelables; Environnement; Biotechnologie
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Tanger
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Tanger
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Tanger
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PUBLIC]
+- Ecole Superieure Roi Fahd de Traduction - ESRFT Tanger
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Institut National de l'Action Sociale - INAS Tanger
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Institut Superieur International du Tourisme - ISIT Tanger
+  Filières: Tourisme; Hôtellerie; Management hôtelier; Événementiel; Restauration; Marketing touristique
+[PUBLIC]
+- CPGE publiques - Tanger
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Tanger
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Sciences Techniques et de Management - SUPTEM Tanger
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Commerce et de Gestion des Affaires Privee - ESCGA Tanger
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure Privee des Hautes Etudes Manageriales de Tanger - HEMT Tanger
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Metiers, de Commerce, de Gestion et d'Informatique Privee - EMCGI Tanger
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure du Management des Entreprises du Detroit - MEDSUP Management Tanger
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Nouvelles Sciences et Ingenierie - ENSIT Tanger
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Institut Superieur de Management et des Medias - SUP'MM Tanger
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Superior Institutions of Sciences and Technology - SIST Tanger
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure des Sciences Commerciales et de Gestion - ESSCG Tanger
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Marocaine des Sciences de l'Ingenieur - EMSI Tanger
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+
+TETOUAN
+------------------------------------------------------------
+[PUBLIC]
+- Universite Abdelmalek Essaadi - Siege / Tetouan
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte des Sciences - Tetouan
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Tetouan
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Tetouan / Martil
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Faculte Ossoul Eddine - Tetouan
+  Filières: Ossoul Addine; Études islamiques; Sciences religieuses
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Tetouan
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PUBLIC]
+- Ecole Nationale d'Architecture - ENA Tetouan
+  Filières: Architecture; Urbanisme; Architecture intérieure; Design d’espace; Patrimoine; Paysage
+[PUBLIC]
+- CPGE publiques - Tetouan
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Tetouan
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE]
+- Institut Superieur Prive de Genie Informatique - SUP ISI Tetouan
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+
+MARTIL
+------------------------------------------------------------
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Martil
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Normale Superieure - ENS Martil
+  Filières: Design graphique; UX/UI Design; Communication visuelle; Design digital; Animation; Audiovisuel; Architecture intérieure; Direction artistique
+
+AL HOCEIMA
+------------------------------------------------------------
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Al Hoceima
+  Filières: MIP : Mathématiques-Informatique-Physique; MIPC : Mathématiques-Informatique-Physique-Chimie; BCG : Biologie-Chimie-Géologie; Génie informatique; Génie électrique; Génie mécanique; Génie industriel; Génie civil; Génie des procédés; Énergies renouvelables; Environnement; Biotechnologie
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Al Hoceima
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PUBLIC]
+- ISPITS - Al Hoceima
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+LARACHE
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Larache - FPL
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+
+KSAR EL KEBIR
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire Ksar El Kebir
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+
+SOUSS-MASSA
+============================================================
+
+AGADIR
+------------------------------------------------------------
+[PUBLIC]
+- Universite Ibn Zohr - Agadir
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie d'Agadir
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- Faculte des Sciences - Agadir
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Agadir
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Agadir
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Faculte de la Chariaa - Agadir
+  Filières: Chariaa et droit; Études islamiques; Droit musulman
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Agadir
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Agadir
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PUBLIC]
+- Ecole Nationale d'Architecture - ENA Agadir
+  Filières: Architecture; Urbanisme; Architecture intérieure; Design d’espace; Patrimoine; Paysage
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Agadir
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- Complexe Horticole - Agadir
+  Filières: Agronomie; Horticulture; Protection des plantes; Agroéconomie; Productions animales; Productions végétales; Irrigation; Agroalimentaire
+[PUBLIC]
+- CPGE publiques - Agadir
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Agadir
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Universite Internationale d'Agadir - Universiapolis
+  Filières: Management; Commerce international; Marketing; Finance; Génie informatique; Génie industriel; Tourisme; Communication; Santé
+[PRIVE AUTORISE / RECONNU]
+- Ecole de Management et d'Administration des Affaires - Agadir
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Management du Sud Privee - ESMS Agadir
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes Paramedicales Souss - IHEPS Agadir
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+AIT MELLOUL
+------------------------------------------------------------
+[PUBLIC]
+- Faculte des Langues, des Arts et des Lettres - Ait Melloul
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Faculte des Sciences Appliquees - Ait Melloul
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+
+TAROUDANT
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Taroudant
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+
+ORIENTAL
+============================================================
+
+OUJDA
+------------------------------------------------------------
+[PUBLIC]
+- Universite Mohammed Premier - Oujda
+  Filières: Génie civil; Génie informatique; Génie électrique; Génie industriel; Génie mécanique; Génie minéral; Hydraulique et environnement; Télécommunications
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie d'Oujda
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- Faculte des Sciences - Oujda
+  Filières: Mathématiques; Informatique; Physique; Chimie; Sciences de la Vie; Sciences de la Terre et de l’Univers; Biologie; Géologie; Électronique; Énergies renouvelables
+[PUBLIC]
+- Faculte des Sciences Juridiques, Economiques et Sociales - FSJES Oujda
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Oujda
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Oujda
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Nationale des Sciences Appliquees - ENSA Oujda
+  Filières: Génie informatique; Génie réseaux et télécommunications; Génie électrique; Génie industriel; Génie mécanique; Génie civil; Génie énergétique; Génie des procédés; Intelligence artificielle/Data; Cybersécurité
+[PUBLIC]
+- Ecole Nationale d'Architecture - ENA Oujda
+  Filières: Architecture; Urbanisme; Architecture intérieure; Design d’espace; Patrimoine; Paysage
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Oujda
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- CPGE publiques - Oujda
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Oujda
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE / RECONNU]
+- Institut des Hautes Etudes Bancaires, Financieres et Manageriales - HBFG Oujda
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes Commerciales et Informatiques - HECI Oujda
+  Filières: Management; Marketing; Marketing digital; Finance; Comptabilité; Audit et contrôle de gestion; Commerce international; Ressources humaines; Entrepreneuriat; Business analytics; Supply chain
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure de Management Informatique et Telecommunications Privee d'Oujda - SUPMTI Oujda
+  Filières: Management; Finance; Marketing; Tourisme/Hôtellerie; Génie informatique; Génie industriel; Architecture; Santé; Design
+[PRIVE AUTORISE / RECONNU]
+- Ecole des Hautes Etudes d'Ingenierie - EHEIO Oujda
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+[PRIVE AUTORISE / RECONNU]
+- Ecole Superieure d'Ingenierie Appliquee et Innovation Privee - Oujda
+  Filières: Génie informatique; Développement logiciel; Réseaux et télécommunications; Cybersécurité; Cloud/DevOps; Intelligence artificielle; Data science; Génie industriel; Génie civil/BTP; Génie électrique; Automatisme; Management des systèmes d’information
+
+NADOR
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Pluridisciplinaire de Nador
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Nador
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- CPGE publiques - Nador
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Nador
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+BERKANE
+------------------------------------------------------------
+[PUBLIC]
+- Ecole Nationale de l'Intelligence Artificielle et du Digital - ENIAD Berkane
+  Filières: Design graphique; UX/UI Design; Communication visuelle; Design digital; Animation; Audiovisuel; Architecture intérieure; Direction artistique
+
+BENI MELLAL-KHENIFRA
+============================================================
+
+BENI MELLAL
+------------------------------------------------------------
+[PUBLIC]
+- Universite Sultan Moulay Slimane - Beni Mellal
+  Filières: Université mère : utiliser les filières des facultés/écoles rattachées listées dans la même ville; Sciences; Droit; Économie; Gestion; Lettres/Langues; Ingénierie selon établissements rattachés
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie de Beni Mellal
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Beni Mellal
+  Filières: MIP : Mathématiques-Informatique-Physique; MIPC : Mathématiques-Informatique-Physique-Chimie; BCG : Biologie-Chimie-Géologie; Génie informatique; Génie électrique; Génie mécanique; Génie industriel; Génie civil; Génie des procédés; Énergies renouvelables; Environnement; Biotechnologie
+[PUBLIC]
+- Faculte des Lettres et des Sciences Humaines - Beni Mellal
+  Filières: Études arabes; Études françaises; Études anglaises; Études hispaniques; Études allemandes; Études italiennes; Études islamiques; Histoire et civilisation; Géographie; Philosophie; Sociologie; Psychologie; Communication
+[PUBLIC]
+- Faculte d'Economie et de Gestion - FEG Beni Mellal
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Beni Mellal
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Beni Mellal
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- CPGE publiques - Beni Mellal
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Beni Mellal
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+[PRIVE AUTORISE]
+- Ecole Superieure de Management, Informatique et Telecommunication Privee de Beni Mellal - SUPMTI Beni Mellal
+  Filières: Management; Finance; Marketing; Tourisme/Hôtellerie; Génie informatique; Génie industriel; Architecture; Santé; Design
+
+KHENIFRA
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Khenifra
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Khenifra
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- ISPITS - Khenifra
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+DRAA-TAFILALET
+============================================================
+
+ERRACHIDIA
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire d'Errachidia
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Faculte des Sciences et Techniques - FST Errachidia
+  Filières: MIP : Mathématiques-Informatique-Physique; MIPC : Mathématiques-Informatique-Physique-Chimie; BCG : Biologie-Chimie-Géologie; Génie informatique; Génie électrique; Génie mécanique; Génie industriel; Génie civil; Génie des procédés; Énergies renouvelables; Environnement; Biotechnologie
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Errachidia
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie - Errachidia
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- CPGE publiques - Errachidia
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Errachidia
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+OUARZAZATE
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Ouarzazate
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- CPGE publiques - Ouarzazate
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Ouarzazate
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+GUELMIM-OUED NOUN
+============================================================
+
+GUELMIM
+------------------------------------------------------------
+[PUBLIC]
+- Faculte d'Economie et de Gestion - FEG Guelmim
+  Filières: Droit privé; Droit public; Sciences économiques; Gestion; Finance; Comptabilité; Management; Administration publique; Relations internationales
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Guelmim
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie - Guelmim
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- CPGE publiques - Guelmim
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Guelmim
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+LAAYOUNE-SAKIA EL HAMRA
+============================================================
+
+LAAYOUNE
+------------------------------------------------------------
+[PUBLIC]
+- Faculte Polydisciplinaire de Laayoune
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Laayoune
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- Faculte de Medecine et de Pharmacie - Laayoune
+  Filières: Médecine générale; Pharmacie; Sciences biomédicales; Santé publique
+[PUBLIC]
+- CPGE publiques - Laayoune
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Laayoune
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+DAKHLA-OUED EDDAHAB
+============================================================
+
+DAKHLA
+------------------------------------------------------------
+[PUBLIC]
+- Ecole Nationale de Commerce et de Gestion - ENCG Dakhla
+  Filières: Commerce international; Marketing; Marketing digital; Audit et contrôle de gestion; Finance et comptabilité; Gestion financière; Gestion des ressources humaines; Logistique/Supply chain; Management entrepreneurial
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Dakhla
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+[PUBLIC]
+- CPGE publiques - Dakhla
+  Filières: MPSI/MP; PCSI/PC; PSI; TSI; ECT; Économie et commerce; Préparation CNC; Préparation écoles de commerce
+[PUBLIC]
+- ISPITS - Dakhla
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique
+
+AUTRES VILLES UNIVERSITAIRES IMPORTANTES
+============================================================
+
+BEN GUERIR / BENGUERIR
+------------------------------------------------------------
+[PUBLIC / PRIVE RECONNU / SPECIFIQUE]
+- Universite Mohammed VI Polytechnique - UM6P Ben Guerir
+  Filières: Computer Science; Intelligence artificielle; Data science; Génie industriel; Génie chimique; Matériaux; Mines/Géologie; Énergies renouvelables; Agriculture durable; Architecture/Urbanisme; Business/Management; Gouvernance publique
+[PUBLIC / PRIVE RECONNU / SPECIFIQUE]
+- 1337 Coding School Ben Guerir
+  Filières: Développement logiciel; Algorithmique; Programmation système; Développement web; Mobile; DevOps; Cybersécurité; Réseaux; Bases de données
+[PRIVE]
+- Aucun autre etablissement prive autorise/reconnu confirme dans les sources principales utilisees.
+  Filières: À vérifier établissement par établissement; Informatique; Management/Gestion; Finance/Comptabilité; Marketing/Commerce; Santé/Paramédical; Droit; Communication/Design
+
+FQUIH BEN SALAH
+------------------------------------------------------------
+[PUBLIC]
+- Ecole Superieure de Technologie - EST Fqih Ben Salah
+  Filières: Génie informatique; Génie électrique; Génie mécanique et productique; Génie industriel et maintenance; Génie civil; Techniques de management; Techniques de commercialisation; Gestion des entreprises et administrations; Finance-comptabilité; Logistique; Communication; Réseaux et télécommunications; Hygiène sécurité environnement
+
+TIZNIT
+------------------------------------------------------------
+[PUBLIC]
+- ISPITS - Tiznit
+  Filières: Sciences infirmières; Infirmier polyvalent; Sage-femme; Anesthésie-réanimation; Radiologie; Laboratoire biomédical; Kinésithérapie; Orthophonie; Psychomotricité; Optométrie/Optique; Nutrition; Santé publique

@@ -5,7 +5,7 @@ const isMissing = (value) => value === undefined || value === null || value === 
 
 const validateProgram = (body) => {
   if (isMissing(body.nom)) return "Le champ nom est obligatoire";
-  if (!validLevels.includes(body.niveau)) return "Le niveau doit être Bac, Bac+2, Bac+3 ou Bac+5";
+  if (body.niveau && !validLevels.includes(body.niveau)) return "Le niveau doit être Bac, Bac+2, Bac+3 ou Bac+5";
   if (isMissing(body.ecole_id)) return "Le champ ecole_id est obligatoire";
   return null;
 };
@@ -73,4 +73,3 @@ export const programController = {
     }
   }
 };
-

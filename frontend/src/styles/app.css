@@ -81,27 +81,19 @@ textarea {
 .brand-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  color: var(--stoon-black);
-  font-weight: 900;
 }
 
 .brand-logo img {
-  width: 118px;
   height: auto;
   display: block;
 }
 
-.brand-logo-text {
-  font-size: 1.05rem;
+.brand-logo-full img {
+  width: 142px;
 }
 
-.brand-logo-compact img {
-  width: 48px;
-}
-
-.brand-logo-compact .brand-logo-text {
-  display: none;
+.brand-logo-symbol img {
+  width: 52px;
 }
 
 .btn {
@@ -354,7 +346,7 @@ textarea {
   border-radius: var(--stoon-radius);
   display: grid;
   gap: 0.7rem;
-  grid-template-columns: auto repeat(5, minmax(150px, 1fr));
+  grid-template-columns: auto repeat(6, minmax(150px, 1fr));
   padding: 0.8rem;
 }
 
@@ -377,6 +369,10 @@ textarea {
 .filter-bar select {
   background: var(--stoon-white);
   padding: 0.65rem 0.75rem;
+}
+
+.filter-bar > span select {
+  width: 100%;
 }
 
 .listing-grid {

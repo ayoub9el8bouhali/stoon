@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import mysql from "mysql2/promise";
 import { env } from "../config/env.js";
+import "./generateAcademicCatalog.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,7 +26,7 @@ const run = async () => {
     await connection.query(schemaSql);
     await connection.query(seedSql);
 
-    console.log("Tables académiques et seeds ST00N importés.");
+    console.log("Catalogue académique ST00N généré et importé.");
   } finally {
     await connection.end();
   }

@@ -19,7 +19,7 @@ export function Navbar() {
     <nav className="navbar navbar-expand-lg stoon-navbar sticky-top">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <BrandLogo />
+          <BrandLogo full />
         </Link>
         <button
           className="navbar-toggler"

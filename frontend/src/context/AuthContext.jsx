@@ -75,10 +75,17 @@ export function AuthProvider({ children }) {
     setUser(null);
   };
 
-  const updateUser = (updates) => {
-    const nextUser = { ...user, ...updates };
+  const updateUser = async (updates) => {
+    let nextUser = { ...user, ...updates };
+    try {
+      const response = await api.put("/users/profile", updates);
+      nextUser = response.data.user;
+    } catch (error) {
+      if (error.response) throw error;
+    }
     localStorage.setItem("stoon_user", JSON.stringify(nextUser));
     setUser(nextUser);
+    return nextUser;
   };
 
   const value = useMemo(

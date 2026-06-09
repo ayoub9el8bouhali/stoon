@@ -8,8 +8,8 @@ export function CreateListingPage() {
   const { user } = useAuth();
   const { addListing } = useData();
 
-  const submit = (module, payload) => {
-    const created = addListing(module, payload, user);
+  const submit = async (module, payload) => {
+    const created = await addListing(module, payload, user);
     navigate(`/annonces/${module}/${created.id}`);
   };
 

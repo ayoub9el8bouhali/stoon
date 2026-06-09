@@ -4,10 +4,17 @@ CREATE DATABASE IF NOT EXISTS stoon_db
 
 USE stoon_db;
 
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS programs;
+DROP TABLE IF EXISTS schools;
+DROP TABLE IF EXISTS cities;
+SET FOREIGN_KEY_CHECKS = 1;
+
 CREATE TABLE IF NOT EXISTS cities (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nom VARCHAR(100) NOT NULL UNIQUE,
   region VARCHAR(100) NULL,
+  aliases JSON NOT NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -15,9 +22,9 @@ CREATE TABLE IF NOT EXISTS cities (
 CREATE TABLE IF NOT EXISTS schools (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nom VARCHAR(180) NOT NULL,
-  type ENUM('publique', 'privée') NOT NULL,
+  statut VARCHAR(80) NOT NULL,
   ville_id INT UNSIGNED NOT NULL,
-  description TEXT NOT NULL,
+  description TEXT NULL,
   site_web VARCHAR(255) NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -26,13 +33,14 @@ CREATE TABLE IF NOT EXISTS schools (
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   INDEX idx_schools_city (ville_id),
-  INDEX idx_schools_type (type)
+  INDEX idx_schools_status (statut),
+  UNIQUE KEY uq_schools_city_name (ville_id, nom)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS programs (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nom VARCHAR(160) NOT NULL,
-  niveau ENUM('Bac', 'Bac+2', 'Bac+3', 'Bac+5') NOT NULL,
+  niveau ENUM('Bac', 'Bac+2', 'Bac+3', 'Bac+5') NULL,
   ecole_id INT UNSIGNED NOT NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -41,6 +49,6 @@ CREATE TABLE IF NOT EXISTS programs (
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   INDEX idx_programs_school (ecole_id),
-  INDEX idx_programs_level (niveau)
+  INDEX idx_programs_level (niveau),
+  UNIQUE KEY uq_programs_school_name (ecole_id, nom)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-

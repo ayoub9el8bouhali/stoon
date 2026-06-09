@@ -22,7 +22,7 @@ export const programModel = {
     return rows;
   },
 
-  async create({ nom, niveau, ecole_id }) {
+  async create({ nom, niveau = null, ecole_id }) {
     const [result] = await pool.execute(
       "INSERT INTO programs (nom, niveau, ecole_id) VALUES (:nom, :niveau, :ecole_id)",
       { nom, niveau, ecole_id }
@@ -35,7 +35,7 @@ export const programModel = {
     return rows[0] || null;
   },
 
-  async update(id, { nom, niveau, ecole_id }) {
+  async update(id, { nom, niveau = null, ecole_id }) {
     const [result] = await pool.execute(
       "UPDATE programs SET nom = :nom, niveau = :niveau, ecole_id = :ecole_id WHERE id = :id",
       { id, nom, niveau, ecole_id }
@@ -48,4 +48,3 @@ export const programModel = {
     return result.affectedRows > 0;
   }
 };
-

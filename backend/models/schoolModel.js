@@ -1,7 +1,7 @@
 import { pool } from "../config/db.js";
 
 const baseSelect = `
-  SELECT s.id, s.nom, s.type, s.ville_id, s.description, s.site_web,
+  SELECT s.id, s.nom, s.statut, s.ville_id, s.description, s.site_web,
          c.nom AS ville_nom
   FROM schools s
   INNER JOIN cities c ON c.id = s.ville_id
@@ -22,11 +22,11 @@ export const schoolModel = {
     return rows;
   },
 
-  async create({ nom, type, ville_id, description, site_web = null }) {
+  async create({ nom, statut, ville_id, description = null, site_web = null }) {
     const [result] = await pool.execute(
-      `INSERT INTO schools (nom, type, ville_id, description, site_web)
-       VALUES (:nom, :type, :ville_id, :description, :site_web)`,
-      { nom, type, ville_id, description, site_web }
+      `INSERT INTO schools (nom, statut, ville_id, description, site_web)
+       VALUES (:nom, :statut, :ville_id, :description, :site_web)`,
+      { nom, statut, ville_id, description, site_web }
     );
     return this.findById(result.insertId);
   },
@@ -36,13 +36,13 @@ export const schoolModel = {
     return rows[0] || null;
   },
 
-  async update(id, { nom, type, ville_id, description, site_web = null }) {
+  async update(id, { nom, statut, ville_id, description = null, site_web = null }) {
     const [result] = await pool.execute(
       `UPDATE schools
-       SET nom = :nom, type = :type, ville_id = :ville_id,
+       SET nom = :nom, statut = :statut, ville_id = :ville_id,
            description = :description, site_web = :site_web
        WHERE id = :id`,
-      { id, nom, type, ville_id, description, site_web }
+      { id, nom, statut, ville_id, description, site_web }
     );
     return result.affectedRows ? this.findById(id) : null;
   },
@@ -52,4 +52,3 @@ export const schoolModel = {
     return result.affectedRows > 0;
   }
 };
-
