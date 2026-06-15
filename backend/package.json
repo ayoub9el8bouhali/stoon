@@ -11,7 +11,8 @@
     "db:seed": "node database/seed.js",
     "db:academic:generate": "node database/generateAcademicCatalog.js",
     "db:academic:test": "node --test database/academicCatalog.test.js",
-    "db:academic": "node database/academicSetup.js"
+    "db:academic": "node database/academicSetup.js",
+    "test:chatbot": "python -m unittest chatbot/test_chatbot.py && node --test services/chatbotService.test.js services/chatbotSearchService.test.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

@@ -12,6 +12,7 @@ import adminRoutes from "./adminRoutes.js";
 import cityRoutes from "./cityRoutes.js";
 import schoolRoutes from "./schoolRoutes.js";
 import programRoutes from "./programRoutes.js";
+import chatbotRoutes from "./chatbotRoutes.js";
 
 const router = Router();
 
@@ -37,5 +38,6 @@ router.use("/admin", adminRoutes);
 router.use("/cities", cityRoutes);
 router.use("/schools", schoolRoutes);
 router.use("/programs", programRoutes);
+router.use("/chatbot", chatbotRoutes);
 
 export default router;

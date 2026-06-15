@@ -4,8 +4,9 @@ ST00N est une plateforme web full-stack pour la vie étudiante au Maroc : coloca
 
 ## Stack
 
-- Frontend : React.js, React Router DOM, Context API, Axios, Bootstrap 5, JavaScript ES6+
+- Frontend : HTML5, CSS3, Bootstrap 5 et JavaScript ES6+ vanilla
 - Backend : Node.js, Express.js, architecture MVC, JWT, Multer, Helmet, Rate Limit, Zod
+- Chatbot : Python local, connaissances JSON et historique texte
 - Base de données : MySQL, MySQL2, Sequelize, phpMyAdmin
 
 ## Structure
@@ -13,18 +14,13 @@ ST00N est une plateforme web full-stack pour la vie étudiante au Maroc : coloca
 ```txt
 stoon/
 ├── frontend/
-│   ├── public/
-│   └── src/
-│       ├── assets/
-│       ├── components/
-│       ├── context/
-│       ├── layouts/
-│       ├── pages/
-│       ├── routes/
-│       ├── services/
-│       ├── styles/
-│       └── utils/
+│   ├── index.html
+│   ├── assets/
+│   ├── css/
+│   ├── js/
+│   └── pages/
 ├── backend/
+│   ├── chatbot/
 │   ├── config/
 │   ├── controllers/
 │   ├── database/
@@ -107,22 +103,22 @@ npm run db:academic
 
 La commande `db:academic` reconstruit les tables académiques puis importe le catalogue généré.
 
-## Installation frontend
+## Lancement
+
+Le backend Node.js sert directement les pages HTML du frontend :
 
 ```bash
-cd stoon/frontend
+cd stoon/backend
 npm install
-copy .env.example .env
-npm run dev
+npm start
 ```
-
-Le build Vite est configuré avec des chunks séparés pour React, Bootstrap, Recharts, Axios et les icônes afin de garder le bundle plus maintenable.
 
 URL locale par défaut :
 
-- Frontend : `http://localhost:5173`
-- Backend : `http://localhost:5000/api`
+- Application : `http://localhost:5000`
+- API : `http://localhost:5000/api`
 - Santé API : `http://localhost:5000/api/health`
+- Chatbot Python : `POST http://localhost:5000/api/chatbot/ask`
 
 ## Routes API
 

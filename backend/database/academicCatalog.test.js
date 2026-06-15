@@ -1,7 +1,12 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { buildAcademicCatalog, catalogToSql } from "./academicCatalog.js";
+import {
+  buildAcademicCatalog,
+  catalogToFrenchSchoolTypeRepairSql,
+  catalogToFrenchSql,
+  catalogToSql
+} from "./academicCatalog.js";
 
 const establishmentsText = await readFile(
   new URL("./sources/stoon_etablissements_ville_par_ville.txt", import.meta.url),
@@ -47,4 +52,32 @@ test("generates deterministic replacement SQL", () => {
   assert.match(first, /INSERT INTO cities/);
   assert.match(first, /INSERT INTO schools/);
   assert.match(first, /INSERT INTO programs/);
+});
+
+test("generates an import compatible with the French WordPress tables", () => {
+  const sql = catalogToFrenchSql(catalog);
+
+  assert.doesNotMatch(sql, /\bUSE\s+/);
+  assert.match(sql, /CREATE TABLE IF NOT EXISTS villes/);
+  assert.match(sql, /CREATE TABLE IF NOT EXISTS etablissements/);
+  assert.match(sql, /CREATE TABLE IF NOT EXISTS filieres/);
+  assert.match(sql, /INFORMATION_SCHEMA\.COLUMNS/);
+  assert.match(sql, /ALTER TABLE etablissements ADD COLUMN type ENUM/);
+  assert.match(sql, /DELETE FROM filieres;/);
+  assert.match(sql, /DELETE FROM etablissements;/);
+  assert.match(sql, /DELETE FROM villes;/);
+  assert.match(sql, /INSERT INTO villes \(id, nom\) VALUES/);
+  assert.match(sql, /INSERT INTO etablissements \(id, nom, type, ville_id\) VALUES/);
+  assert.match(sql, /INSERT INTO filieres \(id, nom, niveau, etablissement_id\) VALUES/);
+  assert.doesNotMatch(sql, /INSERT INTO (cities|schools|programs)/);
+});
+
+test("generates a focused repair for the WordPress school type column", () => {
+  const sql = catalogToFrenchSchoolTypeRepairSql(catalog);
+
+  assert.match(sql, /INFORMATION_SCHEMA\.COLUMNS/);
+  assert.match(sql, /ALTER TABLE etablissements ADD COLUMN type ENUM/);
+  assert.match(sql, /UPDATE etablissements SET type = 'public' WHERE id IN/);
+  assert.match(sql, /UPDATE etablissements SET type = 'private' WHERE id IN/);
+  assert.doesNotMatch(sql, /DELETE FROM/);
 });

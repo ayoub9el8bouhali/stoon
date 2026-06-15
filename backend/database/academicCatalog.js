@@ -173,3 +173,106 @@ INSERT INTO programs (id, nom, niveau, ecole_id) VALUES
 ${programValues};
 `;
 };
+
+export const catalogToFrenchSql = ({ cities, schools, programs }) => {
+  const cityValues = cities.map(({ id, name }) => `(${id}, ${sqlString(name)})`).join(",\n");
+  const schoolValues = schools
+    .map(({ id, name, cityId, status }) => {
+      const type = status === "public" ? "public" : "private";
+      return `(${id}, ${sqlString(name)}, ${sqlString(type)}, ${cityId})`;
+    })
+    .join(",\n");
+  const programValues = programs
+    .map(({ id, name, level, schoolId }) => `(${id}, ${sqlString(name)}, ${sqlString(level)}, ${schoolId})`)
+    .join(",\n");
+
+  return `-- Importer ce fichier après avoir sélectionné la base STOON dans phpMyAdmin.
+-- Le fichier ne sélectionne pas la base car InfinityFree impose son propre nom.
+
+CREATE TABLE IF NOT EXISTS villes (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nom VARCHAR(100) NOT NULL UNIQUE,
+  cree_le TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS etablissements (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nom VARCHAR(150) NOT NULL,
+  type ENUM('public','private') NOT NULL DEFAULT 'public',
+  ville_id INT NULL,
+  cree_le TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY idx_etablissements_ville (ville_id),
+  CONSTRAINT fk_etablissements_ville
+    FOREIGN KEY (ville_id) REFERENCES villes(id)
+    ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+SET @stoon_add_school_type = (
+  SELECT IF(
+    COUNT(*) = 0,
+    'ALTER TABLE etablissements ADD COLUMN type ENUM(''public'',''private'') NOT NULL DEFAULT ''public'' AFTER nom',
+    'SELECT 1'
+  )
+  FROM INFORMATION_SCHEMA.COLUMNS
+  WHERE TABLE_SCHEMA = DATABASE()
+    AND TABLE_NAME = 'etablissements'
+    AND COLUMN_NAME = 'type'
+);
+PREPARE stoon_school_type_statement FROM @stoon_add_school_type;
+EXECUTE stoon_school_type_statement;
+DEALLOCATE PREPARE stoon_school_type_statement;
+
+CREATE TABLE IF NOT EXISTS filieres (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nom VARCHAR(150) NOT NULL,
+  niveau VARCHAR(100) NULL,
+  etablissement_id INT NULL,
+  cree_le TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY idx_filieres_etablissement (etablissement_id),
+  CONSTRAINT fk_filieres_etablissement
+    FOREIGN KEY (etablissement_id) REFERENCES etablissements(id)
+    ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+SET FOREIGN_KEY_CHECKS = 0;
+DELETE FROM filieres;
+DELETE FROM etablissements;
+DELETE FROM villes;
+
+INSERT INTO villes (id, nom) VALUES
+${cityValues};
+
+INSERT INTO etablissements (id, nom, type, ville_id) VALUES
+${schoolValues};
+
+INSERT INTO filieres (id, nom, niveau, etablissement_id) VALUES
+${programValues};
+
+SET FOREIGN_KEY_CHECKS = 1;
+`;
+};
+
+export const catalogToFrenchSchoolTypeRepairSql = ({ schools }) => {
+  const publicIds = schools.filter(({ status }) => status === "public").map(({ id }) => id).join(",");
+  const privateIds = schools.filter(({ status }) => status !== "public").map(({ id }) => id).join(",");
+
+  return `-- Correctif ciblé pour la cascade Ville -> Etablissement du thème WordPress STOON.
+SET @stoon_add_school_type = (
+  SELECT IF(
+    COUNT(*) = 0,
+    'ALTER TABLE etablissements ADD COLUMN type ENUM(''public'',''private'') NOT NULL DEFAULT ''private'' AFTER nom',
+    'SELECT 1'
+  )
+  FROM INFORMATION_SCHEMA.COLUMNS
+  WHERE TABLE_SCHEMA = DATABASE()
+    AND TABLE_NAME = 'etablissements'
+    AND COLUMN_NAME = 'type'
+);
+PREPARE stoon_school_type_statement FROM @stoon_add_school_type;
+EXECUTE stoon_school_type_statement;
+DEALLOCATE PREPARE stoon_school_type_statement;
+
+UPDATE etablissements SET type = 'public' WHERE id IN (${publicIds});
+UPDATE etablissements SET type = 'private' WHERE id IN (${privateIds});
+`;
+};
