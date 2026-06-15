@@ -70,6 +70,12 @@ class ChatbotStoonTest(unittest.TestCase):
         self.assertIn("Casablanca", response["reply"])
         self.assertFalse(response["needsTeaching"])
 
+    def test_recherche_un_covoiturage_demande_explicitement(self):
+        response = self.bot.respond("je cherche un covoiturage de Marrakech à Casablanca")
+        self.assertEqual("ride", response["search"]["type"])
+        self.assertEqual("Marrakech", response["search"]["departureCity"])
+        self.assertEqual("Casablanca", response["search"]["destinationCity"])
+
     def test_comprend_une_demande_naturelle_de_stage(self):
         response = self.bot.respond("je cherche une opportunité professionnelle")
         self.assertIn("domaine", response["reply"])

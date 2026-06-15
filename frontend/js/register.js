@@ -1,6 +1,6 @@
 import { apiRequest } from "./api.js";
 
-const form = document.querySelector("#auth-form");
+const form = document.querySelector("#register-form");
 const feedback = document.querySelector("#feedback");
 
 form?.addEventListener("submit", async event => {
@@ -8,9 +8,9 @@ form?.addEventListener("submit", async event => {
   feedback.textContent = "";
   const button = form.querySelector("button[type='submit']");
   button.disabled = true;
-  const values = Object.fromEntries(new FormData(form));
   try {
-    const result = await apiRequest("/auth/login", { method: "POST", body: JSON.stringify(values) });
+    const values = Object.fromEntries(new FormData(form));
+    const result = await apiRequest("/auth/register", { method: "POST", body: JSON.stringify(values) });
     localStorage.setItem("stoon_token", result.token);
     localStorage.setItem("stoon_user", JSON.stringify(result.user));
     location.href = "/pages/dashboard.html";

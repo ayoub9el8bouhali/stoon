@@ -129,7 +129,7 @@ def detect_intent(message):
             "nextContext": "housing_city",
         }
 
-    if any(word in message for word in ("trajet", "voyager", "voyage", "transport", "voiture", "conducteur", "passager")):
+    if any(word in message for word in ("covoiturage", "trajet", "voyager", "voyage", "transport", "voiture", "conducteur", "passager")):
         cities = extract_cities(message)
         if len(cities) >= 2:
             return {

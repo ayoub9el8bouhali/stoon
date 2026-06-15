@@ -28,13 +28,6 @@ app.use(
     }
   })
 );
-app.get("*", (req, res, next) => {
-  if (req.path.startsWith("/api") || req.path.startsWith("/uploads")) {
-    return next();
-  }
-
-  return res.sendFile(path.join(frontendPath, "index.html"));
-});
 app.use(notFound);
 app.use(errorHandler);
 
