@@ -1,6 +1,14 @@
 import { apiRequest } from "./api.js";
 import { presentListing } from "./listingPresentation.js";
 
+if (!document.querySelector('link[rel~="icon"]')) {
+  const favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "image/svg+xml";
+  favicon.href = "/assets/stoon-favicon.svg";
+  document.head.append(favicon);
+}
+
 const root = document.querySelector("#listings");
 const endpoint = document.body.dataset.endpoint;
 const emptyMessage = document.body.dataset.empty || "Aucune annonce disponible.";
