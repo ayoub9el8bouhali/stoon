@@ -17,6 +17,15 @@ const formatDate = value => {
 const capitalize = value => value ? `${value.charAt(0).toUpperCase()}${value.slice(1)}` : "";
 
 export function presentListing(item) {
+  if (item.category || item.transactionType) {
+    return {
+      city: item.city || "Document",
+      title: item.title || "Ressource étudiante",
+      description: [capitalize(item.category), item.school, item.fieldOfStudy].filter(Boolean).join(" · "),
+      price: Number(item.price) === 0 ? "Gratuit" : formatMoney(item.price)
+    };
+  }
+
   if (item.departureCity || item.destinationCity) {
     const seats = hasValue(item.seatsAvailable) ? `${item.seatsAvailable} places disponibles` : "";
     const date = formatDate(item.departureAt);

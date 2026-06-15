@@ -85,6 +85,28 @@ export const getMyStats = asyncHandler(async (req, res) => {
   });
 });
 
+export const getMyPublications = asyncHandler(async (req, res) => {
+  const userId = req.user.id;
+  const [housing, documents, rides, jobs] = await Promise.all([
+    Housing.findAll({ where: { userId }, order: [["createdAt", "DESC"]] }),
+    MarketplaceItem.findAll({ where: { userId }, order: [["createdAt", "DESC"]] }),
+    Ride.findAll({ where: { userId }, order: [["createdAt", "DESC"]] }),
+    Job.findAll({ where: { userId }, order: [["createdAt", "DESC"]] })
+  ]);
+
+  const addType = (items, resourceType) =>
+    items.map(item => ({ ...item.get({ plain: true }), resourceType, ownerId: userId }));
+
+  const data = [
+    ...addType(housing, "housing"),
+    ...addType(documents, "document"),
+    ...addType(rides, "ride"),
+    ...addType(jobs, "job")
+  ].sort((left, right) => new Date(right.createdAt) - new Date(left.createdAt));
+
+  res.json({ success: true, data });
+});
+
 export const listNotifications = asyncHandler(async (req, res) => {
   const notifications = await Notification.findAll({
     where: { userId: req.user.id },

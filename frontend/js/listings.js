@@ -8,6 +8,7 @@ const pageSize = 24;
 let visibleCount = pageSize;
 let allItems = [];
 let filteredItems = [];
+const currentUser = JSON.parse(localStorage.getItem("stoon_user") || "null");
 
 const escapeHtml = value => String(value ?? "").replace(/[&<>"']/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 
@@ -15,6 +16,16 @@ const render = items => {
   const visibleItems = items.slice(0, visibleCount);
   root.innerHTML = visibleItems.length ? visibleItems.map(item => {
     const listing = presentListing(item);
+    const owner = item.owner;
+    const ownerActions = owner ? `
+      <div class="listing-owner"><span>Publié par <strong>${escapeHtml(owner.firstName)} ${escapeHtml(owner.lastName)}</strong> · ★ ${escapeHtml(owner.reputation)}</span>
+      <div class="listing-actions">
+        <a class="btn btn-sm btn-outline-stoon" href="/pages/user.html?id=${owner.id}">Voir le profil</a>
+        ${currentUser?.id === owner.id
+          ? `<a class="btn btn-sm btn-stoon" href="/pages/my-publications.html">Gérer mon offre</a>`
+          : `<a class="btn btn-sm btn-stoon" href="/pages/messages.html?participantId=${owner.id}">Contacter</a>`}
+        <button class="btn btn-sm btn-outline-stoon" type="button" data-favorite="${endpoint}:${item.id}">♡ Favori</button>
+      </div></div>` : "";
     return `
       <div class="col-md-6 col-lg-4">
         <article class="listing-card">
@@ -23,6 +34,7 @@ const render = items => {
             <h3>${escapeHtml(listing.title)}</h3>
             <p class="text-secondary">${escapeHtml(listing.description)}</p>
             <div class="price">${escapeHtml(listing.price)}</div>
+            ${ownerActions}
           </div>
         </article>
       </div>`;
@@ -41,10 +53,30 @@ const render = items => {
   }
 };
 
+root.addEventListener("click", async event => {
+  const button = event.target.closest("[data-favorite]");
+  if (!button) return;
+  const [resource, id] = button.dataset.favorite.split(":");
+  try {
+    const result = await apiRequest(`${resource}/${id}/favorite`, { method: "POST" });
+    button.textContent = result.favorited ? "♥ Favori" : "♡ Favori";
+  } catch (error) {
+    if (error.message.includes("Authentification")) location.href = "/pages/login.html";
+    else button.textContent = error.message;
+  }
+});
+
 try {
   const result = await apiRequest(endpoint);
   allItems = result.data || result.items || result.rides || result.jobs || result.housing || [];
   filteredItems = allItems;
+
+  if (localStorage.getItem("stoon_token") && endpoint !== "/schools") {
+    const publishBanner = document.createElement("div");
+    publishBanner.className = "publish-banner";
+    publishBanner.innerHTML = `<span>Vous avez une offre à partager avec les étudiants ?</span><a class="btn btn-stoon" href="/pages/publish.html">+ Publier une offre</a>`;
+    root.before(publishBanner);
+  }
 
   if (allItems.length > 6) {
     const toolbar = document.createElement("div");

@@ -1,6 +1,7 @@
 import { Router } from "express";
 import {
   getMyStats,
+  getMyPublications,
   getUserById,
   listNotifications,
   listUsers,
@@ -16,6 +17,7 @@ const router = Router();
 
 router.get("/", protect, adminOnly, listUsers);
 router.get("/me/stats", protect, getMyStats);
+router.get("/me/publications", protect, getMyPublications);
 router.get("/me/notifications", protect, listNotifications);
 router.patch("/me/notifications/:id/read", protect, validate(schemas.idParam), markNotificationRead);
 router.put("/profile", protect, upload.single("photo"), validate(schemas.profile), updateProfile);

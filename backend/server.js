@@ -6,7 +6,7 @@ import { connectDatabase } from "./config/database.js";
 import "./models/index.js";
 import apiRoutes from "./routes/index.js";
 import { errorHandler, notFound } from "./middlewares/errorHandler.js";
-import { securityMiddlewares } from "./middlewares/security.js";
+import { apiRateLimit, securityMiddlewares } from "./middlewares/security.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,7 +18,7 @@ app.use(securityMiddlewares);
 app.use(express.json({ limit: "2mb" }));
 app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-app.use("/api", apiRoutes);
+app.use("/api", apiRateLimit, apiRoutes);
 app.use(
   express.static(frontendPath, {
     etag: false,

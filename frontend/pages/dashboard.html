@@ -9,12 +9,7 @@
     <link rel="stylesheet" href="/css/chatbot.css">
   </head>
   <body>
-    <nav class="navbar bg-white border-bottom">
-      <div class="container">
-        <a class="navbar-brand brand-box" href="/"><img src="/assets/stoon-logo.svg" alt="STOON"></a>
-        <button id="logout" class="btn btn-dark-stoon" type="button">Déconnexion</button>
-      </div>
-    </nav>
+    <nav class="account-nav border-bottom"><div class="container" id="account-nav"></div></nav>
     <header class="page-hero">
       <div class="container">
         <div class="row align-items-center g-4">
@@ -30,12 +25,18 @@
       </div>
     </header>
     <main class="container py-5">
+      <section class="dashboard-actions mb-5">
+        <a class="btn btn-stoon" href="/pages/publish.html">+ Publier une offre</a>
+        <a class="btn btn-outline-stoon" href="/pages/my-publications.html">Gérer mes publications</a>
+        <a class="btn btn-outline-stoon" href="/pages/messages.html">Ouvrir mes messages</a>
+      </section>
+      <div id="stats" class="row g-4 mb-5" aria-live="polite"></div>
+      <h2 class="section-title">Explorer STOON</h2>
       <div class="row g-4">
-        <div class="col-md-6 col-lg-4"><a class="service-card" href="/pages/colocation.html"><b>🏠</b><h3>Colocations</h3><p>Consulter les logements étudiants.</p></a></div>
-        <div class="col-md-6 col-lg-4"><a class="service-card" href="/pages/covoiturage.html"><b>🚗</b><h3>Covoiturages</h3><p>Consulter les trajets disponibles.</p></a></div>
-        <div class="col-md-6 col-lg-4"><a class="service-card" href="/pages/jobs.html"><b>💼</b><h3>Stages & Jobs</h3><p>Consulter les opportunités.</p></a></div>
-        <div class="col-md-6 col-lg-4"><a class="service-card" href="/pages/ecoles.html"><b>🎓</b><h3>Écoles</h3><p>Explorer les établissements.</p></a></div>
-        <div class="col-md-6 col-lg-4"><a class="service-card" href="/pages/documents.html"><b>📄</b><h3>Documents</h3><p>Préparer vos démarches étudiantes.</p></a></div>
+        <div class="col-md-6 col-lg-3"><a class="service-card" href="/pages/colocation.html"><b>🏠</b><h3>Colocations</h3><p>Consulter les logements.</p></a></div>
+        <div class="col-md-6 col-lg-3"><a class="service-card" href="/pages/covoiturage.html"><b>🚗</b><h3>Covoiturages</h3><p>Consulter les trajets.</p></a></div>
+        <div class="col-md-6 col-lg-3"><a class="service-card" href="/pages/jobs.html"><b>💼</b><h3>Stages & Jobs</h3><p>Voir les opportunités.</p></a></div>
+        <div class="col-md-6 col-lg-3"><a class="service-card" href="/pages/documents.html"><b>📄</b><h3>Documents</h3><p>Voir les ressources.</p></a></div>
       </div>
     </main>
     <script type="module" src="/js/dashboard.js"></script>

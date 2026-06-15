@@ -10,15 +10,16 @@ export const securityMiddlewares = [
   cors({
     origin: env.frontendUrl,
     credentials: true
-  }),
-  rateLimit({
-    windowMs: 15 * 60 * 1000,
-    limit: 250,
-    standardHeaders: true,
-    legacyHeaders: false,
-    message: {
-      success: false,
-      message: "Trop de requêtes. Réessayez dans quelques minutes."
-    }
   })
 ];
+
+export const apiRateLimit = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  limit: 500,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    success: false,
+    message: "Trop de requêtes. Réessayez dans quelques minutes."
+  }
+});
