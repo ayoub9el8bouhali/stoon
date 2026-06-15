@@ -12,14 +12,19 @@
   <header class="page-hero"><div class="container"><h1>Mes messages</h1><p>Discutez directement avec les autres membres de STOON.</p></div></header>
   <main class="container py-5">
     <div class="message-layout">
-      <aside class="conversation-list"><h2>Conversations</h2><div id="conversations"><p>Chargement...</p></div></aside>
+      <aside class="conversation-list">
+        <div class="conversation-list-heading"><h2>Conversations</h2><button id="refresh-conversations" type="button" aria-label="Actualiser les conversations">↻</button></div>
+        <input id="conversation-search" class="form-control form-control-sm my-2" type="search" placeholder="Rechercher une conversation">
+        <div id="conversations"><p>Chargement...</p></div>
+      </aside>
       <section class="message-panel">
         <div id="message-heading"><h2>Sélectionnez une conversation</h2></div>
         <div id="messages" class="message-stream"><p class="text-secondary">Vos messages apparaîtront ici.</p></div>
         <form id="message-form" class="message-compose">
-          <input class="form-control" name="body" placeholder="Écrivez votre message..." required>
+          <textarea class="form-control" name="body" rows="1" maxlength="4000" placeholder="Écrivez votre message..." required></textarea>
           <button class="btn btn-stoon" type="submit">Envoyer</button>
         </form>
+        <div class="message-hint"><span>Entrée pour envoyer · Maj + Entrée pour une nouvelle ligne</span><span id="message-count">0 / 4000</span></div>
         <div id="feedback" class="mt-2"></div>
       </section>
     </div>
