@@ -21,6 +21,6 @@ router.get("/me/publications", protect, getMyPublications);
 router.get("/me/notifications", protect, listNotifications);
 router.patch("/me/notifications/:id/read", protect, validate(schemas.idParam), markNotificationRead);
 router.put("/profile", protect, upload.single("photo"), validate(schemas.profile), updateProfile);
-router.get("/:id", protect, validate(schemas.idParam), getUserById);
+router.get("/:id", validate(schemas.idParam), getUserById);
 
 export default router;

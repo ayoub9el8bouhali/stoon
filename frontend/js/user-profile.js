@@ -1,7 +1,8 @@
 import { apiRequest } from "./api.js";
-import { escapeHtml, requireAuth, showFeedback } from "./account.js";
+import { escapeHtml, showFeedback } from "./account.js";
 
-const currentUser = await requireAuth();
+const currentUser = JSON.parse(localStorage.getItem("stoon_user") || "null");
+const isAuthenticated = Boolean(localStorage.getItem("stoon_token"));
 const id = new URLSearchParams(location.search).get("id");
 const profile = document.querySelector("#public-profile");
 const reviewsRoot = document.querySelector("#reviews");
@@ -25,9 +26,14 @@ try {
     <p>${escapeHtml(user.bio || "Membre de la communauté STOON.")}</p><strong>Réputation ${escapeHtml(user.reputation)} / 5</strong>
     ${currentUser?.id === user.id
       ? `<div class="mt-3"><a class="btn btn-stoon" href="/pages/profile.html">Modifier mon profil</a></div>`
-      : `<div class="mt-3"><a class="btn btn-stoon" href="/pages/messages.html?participantId=${user.id}">Contacter cette personne</a></div>`}</div>`;
+      : isAuthenticated
+        ? `<div class="mt-3"><a class="btn btn-stoon" href="/pages/messages.html?participantId=${user.id}">Contacter cette personne</a></div>`
+        : `<div class="mt-3"><a class="btn btn-stoon" href="/pages/login.html?next=${encodeURIComponent(`/pages/messages.html?participantId=${user.id}`)}">Connectez-vous pour contacter</a></div>`}</div>`;
   renderReviews(reviews);
-  if (currentUser?.id === user.id) form.hidden = true;
+  if (!isAuthenticated || currentUser?.id === user.id) {
+    form.hidden = true;
+    if (!isAuthenticated) reviewsRoot.insertAdjacentHTML("afterend", `<p class="mt-3"><a href="/pages/login.html?next=${encodeURIComponent(location.pathname + location.search)}">Connectez-vous pour publier un avis.</a></p>`);
+  }
 } catch (error) {
   profile.innerHTML = `<div class="alert alert-warning">${escapeHtml(error.message)}</div>`;
 }

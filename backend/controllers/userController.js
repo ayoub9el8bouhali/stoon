@@ -34,6 +34,7 @@ export const listUsers = asyncHandler(async (req, res) => {
 
 export const getUserById = asyncHandler(async (req, res) => {
   const user = await User.findByPk(req.params.id, {
+    attributes: ["id", "firstName", "lastName", "photo", "city", "school", "fieldOfStudy", "bio", "reputation", "createdAt"],
     include: [
       { model: Review, as: "receivedReviews", limit: 8, separate: true, order: [["createdAt", "DESC"]] }
     ]

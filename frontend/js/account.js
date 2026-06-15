@@ -11,7 +11,8 @@ export const clearSession = () => {
 
 export async function requireAuth() {
   if (!localStorage.getItem("stoon_token")) {
-    location.replace("/pages/login.html");
+    const next = encodeURIComponent(`${location.pathname}${location.search}`);
+    location.replace(`/pages/login.html?next=${next}`);
     return null;
   }
   try {
@@ -20,7 +21,8 @@ export async function requireAuth() {
     return user;
   } catch {
     clearSession();
-    location.replace("/pages/login.html");
+    const next = encodeURIComponent(`${location.pathname}${location.search}`);
+    location.replace(`/pages/login.html?next=${next}`);
     return null;
   }
 }

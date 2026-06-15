@@ -48,6 +48,9 @@ export const createConversation = asyncHandler(async (req, res) => {
   if (!participant) {
     throw new ApiError("Participant introuvable", 404);
   }
+  if (participant.id === req.user.id) {
+    throw new ApiError("Vous ne pouvez pas démarrer une conversation avec vous-même", 422);
+  }
 
   const conversation = await Conversation.create({
     title: `${req.user.firstName} & ${participant.firstName}`,
