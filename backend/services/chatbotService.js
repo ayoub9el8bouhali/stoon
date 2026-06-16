@@ -6,10 +6,11 @@ import { searchStoonData } from "./chatbotSearchService.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const chatbotPath = path.join(__dirname, "..", "chatbot", "chatbot.py");
+const pythonCommand = process.env.PYTHON_BIN || (process.platform === "win32" ? "python" : "python3");
 
 const runPythonChatbot = (payload) =>
   new Promise((resolve, reject) => {
-    const python = spawn("python", [chatbotPath], {
+    const python = spawn(pythonCommand, [chatbotPath], {
       stdio: ["pipe", "pipe", "pipe"],
       windowsHide: true
     });
